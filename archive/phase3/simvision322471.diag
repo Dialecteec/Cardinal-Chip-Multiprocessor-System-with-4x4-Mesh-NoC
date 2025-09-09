@@ -1,0 +1,89 @@
+*** Message Type: info ***
+When: Sun Feb 02 04:00:58 PM PST 2020
+SimVision started.
+Version: TOOL:  simvision       17.04-s014
+User: sooryara
+Host: viterbi-scf2.usc.edu
+Platform: Linux/x86_64/3.10.0-957.el7.x86_64
+Started: Sun Feb 02 04:00:58 PM PST 2020
+Command: /usr/local/cadence/XCELIUM1704/tools.lnx86/simvision/bin/simvision.exe -connect dc:viterbi-scf2.usc.edu:51882 -nocopyright
+Work Directory: /home/viterbi/04/sooryara/EE577b_MENTOR/makeadder1bit
+ 
+*** Message Type: info ***
+When: Sun Feb 02 04:00:59 PM PST 2020
+Create browser window: "Design Browser 1"
+ 
+*** Message Type: info ***
+When: Sun Feb 02 04:01:08 PM PST 2020
+Create console window: "Console"
+ 
+*** Message Type: info ***
+When: Sun Feb 02 04:02:52 PM PST 2020
+Create utility window: "Properties"
+ 
+*** Message Type: info ***
+When: Sun Feb 02 04:03:04 PM PST 2020
+Create waveform window: "Waveform 1"
+ 
+*** Message Type: info ***
+When: Sun Feb 02 04:03:40 PM PST 2020
+Delete waveform window: "Waveform 1"
+ 
+*** Message Type: info ***
+When: Sun Feb 02 04:03:48 PM PST 2020
+Create waveform window: "Waveform 2"
+ 
+*** Message Type: info ***
+When: Sun Feb 02 04:04:45 PM PST 2020
+Delete waveform window: "Waveform 2"
+ 
+*** Message Type: info ***
+When: Sun Feb 02 04:05:22 PM PST 2020
+Delete browser window: "Design Browser 1"
+ 
+*** Message Type: info ***
+When: Sun Feb 02 04:05:39 PM PST 2020
+Exit XM-Sim: user
+      Design: tb
+   Languages: verilog
+   Simulator: XM-Sim
+     Version: TOOL: xmsim   17.04-s014
+        User: sooryara
+        Host: viterbi-scf2.usc.edu
+Time Started: Sun Feb 02 04:00:54 PM PST 2020
+  Process ID: 322470
+   Directory: /home/viterbi/04/sooryara/EE577b_MENTOR/makeadder1bit
+     Command: ncsim -STATUS -NOCOPYRIGHT -MESSAGES -NCFATAL INVSUP -NOWARN DLBRLK -TCL -NOLOG -NOKEY -INPUT ./scripts/runscript.tcl -GUI tb
+
+ 
+*** Message Type: error ***
+When: Sun Feb 02 04:05:40 PM PST 2020
+XM-Sim Crashed:
+      Design: tb
+   Languages: verilog
+   Simulator: XM-Sim
+     Version: TOOL: xmsim   17.04-s014
+        User: sooryara
+        Host: viterbi-scf2.usc.edu
+Time Started: Sun Feb 02 04:00:54 PM PST 2020
+  Process ID: 322470
+   Directory: /home/viterbi/04/sooryara/EE577b_MENTOR/makeadder1bit
+     Command: ncsim -STATUS -NOCOPYRIGHT -MESSAGES -NCFATAL INVSUP -NOWARN DLBRLK -TCL -NOLOG -NOKEY -INPUT ./scripts/runscript.tcl -GUI tb
+      Design: tb
+   Languages: verilog
+   Simulator: XM-Sim
+     Version: TOOL: xmsim   17.04-s014
+        User: sooryara
+        Host: viterbi-scf2.usc.edu
+Time Started: Sun Feb 02 04:00:54 PM PST 2020
+  Process ID: 322470
+   Directory: /home/viterbi/04/sooryara/EE577b_MENTOR/makeadder1bit
+     Command: ncsim -STATUS -NOCOPYRIGHT -MESSAGES -NCFATAL INVSUP -NOWARN DLBRLK -TCL -NOLOG -NOKEY -INPUT ./scripts/runscript.tcl -GUI tb
+
+Outstanding STRAP Requests:
+        strap::report enable out
+ 
+*** Message Type: info ***
+When: Sun Feb 02 04:05:40 PM PST 2020
+SimVision Exit.
+ 

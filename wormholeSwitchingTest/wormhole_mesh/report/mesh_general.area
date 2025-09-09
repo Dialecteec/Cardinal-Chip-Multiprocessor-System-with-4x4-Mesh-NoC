@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : mesh_general
+Version: K-2015.06-SP5-5
+Date   : Thu Apr 17 16:53:23 2025
+****************************************
+
+Library(s) Used:
+
+    gscl45nm (File: /home/scf-22/ee577/NCSU45PDK/FreePDK45/osu_soc/lib/files/gscl45nm.db)
+
+Number of ports:                        14402
+Number of nets:                         62088
+Number of cells:                        48522
+Number of combinational cells:          44358
+Number of sequential cells:              3716
+Number of macros/black boxes:               0
+Number of buf/inv:                      19478
+Number of references:                      16
+
+Combinational area:             100108.257785
+Buf/Inv area:                    34256.083331
+Noncombinational area:           27820.103455
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                127928.361239
+Total area:                 undefined
+1

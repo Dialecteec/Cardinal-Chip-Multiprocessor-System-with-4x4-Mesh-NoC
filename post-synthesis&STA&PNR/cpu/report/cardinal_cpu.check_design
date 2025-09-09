@@ -1,0 +1,114 @@
+ 
+****************************************
+check_design summary:
+Version:     K-2015.06-SP5-5
+Date:        Wed Apr 23 00:14:27 2025
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                     45
+    Unconnected ports (LINT-28)                                    14
+    Shorted outputs (LINT-31)                                      15
+    Constant outputs (LINT-52)                                     16
+
+Cells                                                              21
+    Connected to power or ground (LINT-32)                         14
+    Nets connected to multiple pins on same cell (LINT-33)          7
+
+Designs                                                             4
+    Black box (LINT-55)                                             4
+--------------------------------------------------------------------------------
+
+Warning: In design 'DW_shifter_halfword_3', port 'sh_tc' is not connected to any nets. (LINT-28)
+Warning: In design 'DW_shifter_halfword_3', port 'sh_mode' is not connected to any nets. (LINT-28)
+Warning: In design 'DW_shifter_fullword_1', port 'sh_tc' is not connected to any nets. (LINT-28)
+Warning: In design 'DW_shifter_fullword_1', port 'sh_mode' is not connected to any nets. (LINT-28)
+Warning: In design 'DW_shifter_doubleword', port 'sh_tc' is not connected to any nets. (LINT-28)
+Warning: In design 'DW_shifter_doubleword', port 'sh_mode' is not connected to any nets. (LINT-28)
+Warning: In design 'DW_shifter_fullword_0', port 'sh_tc' is not connected to any nets. (LINT-28)
+Warning: In design 'DW_shifter_fullword_0', port 'sh_mode' is not connected to any nets. (LINT-28)
+Warning: In design 'DW_shifter_halfword_0', port 'sh_tc' is not connected to any nets. (LINT-28)
+Warning: In design 'DW_shifter_halfword_0', port 'sh_mode' is not connected to any nets. (LINT-28)
+Warning: In design 'DW_shifter_halfword_1', port 'sh_tc' is not connected to any nets. (LINT-28)
+Warning: In design 'DW_shifter_halfword_1', port 'sh_mode' is not connected to any nets. (LINT-28)
+Warning: In design 'DW_shifter_halfword_2', port 'sh_tc' is not connected to any nets. (LINT-28)
+Warning: In design 'DW_shifter_halfword_2', port 'sh_mode' is not connected to any nets. (LINT-28)
+Warning: In design 'cardinal_cpu', output port 'dmem_addr[0]' is connected directly to output port 'dmem_addr[1]'. (LINT-31)
+Warning: In design 'cardinal_cpu', output port 'dmem_addr[0]' is connected directly to output port 'dmem_addr[2]'. (LINT-31)
+Warning: In design 'cardinal_cpu', output port 'dmem_addr[0]' is connected directly to output port 'dmem_addr[3]'. (LINT-31)
+Warning: In design 'cardinal_cpu', output port 'dmem_addr[0]' is connected directly to output port 'dmem_addr[4]'. (LINT-31)
+Warning: In design 'cardinal_cpu', output port 'dmem_addr[0]' is connected directly to output port 'dmem_addr[5]'. (LINT-31)
+Warning: In design 'cardinal_cpu', output port 'dmem_addr[0]' is connected directly to output port 'dmem_addr[6]'. (LINT-31)
+Warning: In design 'cardinal_cpu', output port 'dmem_addr[0]' is connected directly to output port 'dmem_addr[7]'. (LINT-31)
+Warning: In design 'cardinal_cpu', output port 'dmem_addr[0]' is connected directly to output port 'dmem_addr[8]'. (LINT-31)
+Warning: In design 'cardinal_cpu', output port 'dmem_addr[0]' is connected directly to output port 'dmem_addr[9]'. (LINT-31)
+Warning: In design 'cardinal_cpu', output port 'dmem_addr[0]' is connected directly to output port 'dmem_addr[10]'. (LINT-31)
+Warning: In design 'cardinal_cpu', output port 'dmem_addr[0]' is connected directly to output port 'dmem_addr[11]'. (LINT-31)
+Warning: In design 'cardinal_cpu', output port 'dmem_addr[0]' is connected directly to output port 'dmem_addr[12]'. (LINT-31)
+Warning: In design 'cardinal_cpu', output port 'dmem_addr[0]' is connected directly to output port 'dmem_addr[13]'. (LINT-31)
+Warning: In design 'cardinal_cpu', output port 'dmem_addr[0]' is connected directly to output port 'dmem_addr[14]'. (LINT-31)
+Warning: In design 'cardinal_cpu', output port 'dmem_addr[0]' is connected directly to output port 'dmem_addr[15]'. (LINT-31)
+Warning: In design 'cardinal_cpu', a pin on submodule 'alu_exm_shift_d' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sh_tc' is connected to logic 1. 
+Warning: In design 'cardinal_cpu', a pin on submodule 'alu_exm_shift_d' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sh_mode' is connected to logic 1. 
+Warning: In design 'cardinal_cpu', a pin on submodule 'alu_exm_gen_sh_w_1__shift_w' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sh_tc' is connected to logic 1. 
+Warning: In design 'cardinal_cpu', a pin on submodule 'alu_exm_gen_sh_w_1__shift_w' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sh_mode' is connected to logic 1. 
+Warning: In design 'cardinal_cpu', a pin on submodule 'alu_exm_gen_sh_w_0__shift_w' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sh_tc' is connected to logic 1. 
+Warning: In design 'cardinal_cpu', a pin on submodule 'alu_exm_gen_sh_w_0__shift_w' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sh_mode' is connected to logic 1. 
+Warning: In design 'cardinal_cpu', a pin on submodule 'alu_exm_gen_sh_h_3__shift_h' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sh_tc' is connected to logic 1. 
+Warning: In design 'cardinal_cpu', a pin on submodule 'alu_exm_gen_sh_h_3__shift_h' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sh_mode' is connected to logic 1. 
+Warning: In design 'cardinal_cpu', a pin on submodule 'alu_exm_gen_sh_h_2__shift_h' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sh_tc' is connected to logic 1. 
+Warning: In design 'cardinal_cpu', a pin on submodule 'alu_exm_gen_sh_h_2__shift_h' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sh_mode' is connected to logic 1. 
+Warning: In design 'cardinal_cpu', a pin on submodule 'alu_exm_gen_sh_h_1__shift_h' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sh_tc' is connected to logic 1. 
+Warning: In design 'cardinal_cpu', a pin on submodule 'alu_exm_gen_sh_h_1__shift_h' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sh_mode' is connected to logic 1. 
+Warning: In design 'cardinal_cpu', a pin on submodule 'alu_exm_gen_sh_h_0__shift_h' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sh_tc' is connected to logic 1. 
+Warning: In design 'cardinal_cpu', a pin on submodule 'alu_exm_gen_sh_h_0__shift_h' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sh_mode' is connected to logic 1. 
+Warning: In design 'cardinal_cpu', the same net is connected to more than one pin on submodule 'alu_exm_shift_d'. (LINT-33)
+   Net 'alu_exm__Logic1_' is connected to pins 'sh_tc', 'sh_mode''.
+Warning: In design 'cardinal_cpu', the same net is connected to more than one pin on submodule 'alu_exm_gen_sh_w_1__shift_w'. (LINT-33)
+   Net 'alu_exm__Logic1_' is connected to pins 'sh_tc', 'sh_mode''.
+Warning: In design 'cardinal_cpu', the same net is connected to more than one pin on submodule 'alu_exm_gen_sh_w_0__shift_w'. (LINT-33)
+   Net 'alu_exm__Logic1_' is connected to pins 'sh_tc', 'sh_mode''.
+Warning: In design 'cardinal_cpu', the same net is connected to more than one pin on submodule 'alu_exm_gen_sh_h_3__shift_h'. (LINT-33)
+   Net 'alu_exm__Logic1_' is connected to pins 'sh_tc', 'sh_mode''.
+Warning: In design 'cardinal_cpu', the same net is connected to more than one pin on submodule 'alu_exm_gen_sh_h_2__shift_h'. (LINT-33)
+   Net 'alu_exm__Logic1_' is connected to pins 'sh_tc', 'sh_mode''.
+Warning: In design 'cardinal_cpu', the same net is connected to more than one pin on submodule 'alu_exm_gen_sh_h_1__shift_h'. (LINT-33)
+   Net 'alu_exm__Logic1_' is connected to pins 'sh_tc', 'sh_mode''.
+Warning: In design 'cardinal_cpu', the same net is connected to more than one pin on submodule 'alu_exm_gen_sh_h_0__shift_h'. (LINT-33)
+   Net 'alu_exm__Logic1_' is connected to pins 'sh_tc', 'sh_mode''.
+Warning: In design 'cardinal_cpu', output port 'dmem_addr[0]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'cardinal_cpu', output port 'dmem_addr[1]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'cardinal_cpu', output port 'dmem_addr[2]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'cardinal_cpu', output port 'dmem_addr[3]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'cardinal_cpu', output port 'dmem_addr[4]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'cardinal_cpu', output port 'dmem_addr[5]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'cardinal_cpu', output port 'dmem_addr[6]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'cardinal_cpu', output port 'dmem_addr[7]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'cardinal_cpu', output port 'dmem_addr[8]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'cardinal_cpu', output port 'dmem_addr[9]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'cardinal_cpu', output port 'dmem_addr[10]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'cardinal_cpu', output port 'dmem_addr[11]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'cardinal_cpu', output port 'dmem_addr[12]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'cardinal_cpu', output port 'dmem_addr[13]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'cardinal_cpu', output port 'dmem_addr[14]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'cardinal_cpu', output port 'dmem_addr[15]' is connected directly to 'logic 0'. (LINT-52)
+Information: Design 'DW02_mult_fullword' does not contain any cells or nets. (LINT-55)
+Information: Design 'DW02_mult_halfword' does not contain any cells or nets. (LINT-55)
+Information: Design 'DW02_mult_byte' does not contain any cells or nets. (LINT-55)
+Information: Design 'DW01_addsub' does not contain any cells or nets. (LINT-55)
+1

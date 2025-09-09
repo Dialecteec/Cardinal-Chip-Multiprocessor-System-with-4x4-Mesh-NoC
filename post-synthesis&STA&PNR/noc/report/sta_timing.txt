@@ -1,0 +1,70 @@
+****************************************
+Report : timing
+        -path_type full
+        -delay_type max
+        -max_paths 1
+        -sort_by slack
+Design : cardinal_noc
+Version: L-2016.06-SP1
+Date   : Mon Apr 28 16:33:56 2025
+****************************************
+
+
+  Startpoint: mesh_0_polarity_reg
+               (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: mesh_0_router_1_1/buf_pei_v0_mem_reg_0_
+               (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.50       0.50
+  mesh_0_polarity_reg/CLK (DFFPOSX1)                      0.00       0.50 r
+  mesh_0_polarity_reg/Q (DFFPOSX1)                        0.72       1.22 r
+  U3158/Y (BUFX4)                                         0.25       1.47 r
+  mesh_0_router_1_1/U2663/Y (BUFX2)                       0.73       2.20 r
+  mesh_0_router_1_1/U2510/Y (NOR3X1)                      0.24       2.44 f
+  mesh_0_router_1_1/U2557/Y (AND2X1)                      0.06       2.51 f
+  mesh_0_router_1_1/U2558/Y (NAND3X1)                     0.05       2.56 r
+  mesh_0_router_1_1/U1234/Y (AND2X2)                      0.04       2.59 r
+  mesh_0_router_1_1/U1233/Y (INVX1)                       0.02       2.61 f
+  mesh_0_router_1_1/U12/Y (OR2X1)                         0.05       2.66 f
+  mesh_0_router_1_1/U2450/Y (INVX1)                       0.02       2.68 r
+  mesh_0_router_1_1/U927/Y (AND2X1)                       0.04       2.72 r
+  mesh_0_router_1_1/U926/Y (INVX1)                        0.02       2.74 f
+  mesh_0_router_1_1/U2569/Y (NAND3X1)                     0.03       2.77 r
+  mesh_0_router_1_1/U1316/Y (BUFX2)                       0.04       2.81 r
+  mesh_0_router_1_1/U2570/Y (AOI22X1)                     0.03       2.84 f
+  mesh_0_router_1_1/U1308/Y (BUFX2)                       0.04       2.88 f
+  mesh_0_router_1_1/U2573/Y (AOI22X1)                     0.04       2.91 r
+  mesh_0_router_1_1/U1348/Y (BUFX2)                       0.05       2.96 r
+  mesh_0_router_1_1/U3286/Y (NAND3X1)                     0.02       2.98 f
+  mesh_0_router_1_1/U326/Y (BUFX2)                        0.03       3.01 f
+  mesh_0_router_1_1/U21/Y (OR2X1)                         0.05       3.07 f
+  mesh_0_router_1_1/U3287/Y (AOI21X1)                     0.03       3.10 r
+  mesh_0_router_1_1/U1293/Y (BUFX2)                       0.04       3.13 r
+  mesh_0_router_1_1/U3288/Y (NAND3X1)                     0.01       3.14 f
+  mesh_0_router_1_1/U1229/Y (BUFX2)                       0.04       3.18 f
+  mesh_0_router_1_1/U1228/Y (INVX1)                       0.59       3.77 r
+  mesh_0_router_1_1/U1360/Y (OR2X1)                       0.01       3.78 r
+  mesh_0_router_1_1/U43/Y (INVX1)                         0.37       4.15 f
+  mesh_0_router_1_1/U3423/Y (AOI22X1)                     0.17       4.33 r
+  mesh_0_router_1_1/U1371/Y (BUFX2)                       0.04       4.37 r
+  mesh_0_router_1_1/U3424/Y (INVX1)                       0.02       4.38 f
+  mesh_0_router_1_1/buf_pei_v0_mem_reg_0_/D (DFFPOSX1)
+                                                          0.00       4.38 f
+  data arrival time                                                  4.38
+
+  clock CLK (rise edge)                                   4.00       4.00
+  clock network delay (ideal)                             0.50       4.50
+  clock reconvergence pessimism                           0.00       4.50
+  mesh_0_router_1_1/buf_pei_v0_mem_reg_0_/CLK (DFFPOSX1)             4.50 r
+  library setup time                                     -0.06       4.44
+  data required time                                                 4.44
+  ------------------------------------------------------------------------------
+  data required time                                                 4.44
+  data arrival time                                                 -4.38
+  ------------------------------------------------------------------------------
+  slack (MET)                                                        0.06

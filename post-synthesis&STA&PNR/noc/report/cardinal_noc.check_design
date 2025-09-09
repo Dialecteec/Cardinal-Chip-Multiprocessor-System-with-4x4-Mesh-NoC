@@ -1,0 +1,1757 @@
+ 
+****************************************
+check_design summary:
+Version:     K-2015.06-SP5-5
+Date:        Thu Apr 24 15:11:25 2025
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                      8
+    Shorted outputs (LINT-31)                                       8
+
+Cells                                                             848
+    Connected to power or ground (LINT-32)                        780
+    Nets connected to multiple pins on same cell (LINT-33)          8
+    Leaf pins connected to undriven nets (LINT-58)                 48
+    Cells have undriven hier pins (LINT-59)                        12
+
+Nets                                                               90
+    Unloaded nets (LINT-2)                                         90
+--------------------------------------------------------------------------------
+
+Warning: In design 'cardinal_noc', net 'mesh_0/router_0_0/empty_pei_v1' driven by pin 'mesh_0/router_0_0/buf_pei_v1/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_0_0/empty_pei_v0' driven by pin 'mesh_0/router_0_0/buf_pei_v0/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_0_0/empty_sni_v1' driven by pin 'mesh_0/router_0_0/buf_sni_v1/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_0_0/empty_sni_v0' driven by pin 'mesh_0/router_0_0/buf_sni_v0/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_0_0/empty_nsi_v1' driven by pin 'mesh_0/router_0_0/buf_nsi_v1/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_0_0/empty_nsi_v0' driven by pin 'mesh_0/router_0_0/buf_nsi_v0/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_0_0/empty_ccwi_v1' driven by pin 'mesh_0/router_0_0/buf_ccwi_v1/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_0_0/empty_ccwi_v0' driven by pin 'mesh_0/router_0_0/buf_ccwi_v0/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_0_0/empty_cwi_v1' driven by pin 'mesh_0/router_0_0/buf_cwi_v1/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_0_0/empty_cwi_v0' driven by pin 'mesh_0/router_0_0/buf_cwi_v0/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_2_2/empty_pei_v1' driven by pin 'mesh_0/router_2_2/buf_pei_v1/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_2_2/empty_pei_v0' driven by pin 'mesh_0/router_2_2/buf_pei_v0/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_2_2/empty_sni_v1' driven by pin 'mesh_0/router_2_2/buf_sni_v1/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_2_2/empty_sni_v0' driven by pin 'mesh_0/router_2_2/buf_sni_v0/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_2_2/empty_nsi_v1' driven by pin 'mesh_0/router_2_2/buf_nsi_v1/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_2_2/empty_nsi_v0' driven by pin 'mesh_0/router_2_2/buf_nsi_v0/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_2_2/empty_ccwi_v1' driven by pin 'mesh_0/router_2_2/buf_ccwi_v1/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_2_2/empty_ccwi_v0' driven by pin 'mesh_0/router_2_2/buf_ccwi_v0/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_2_2/empty_cwi_v1' driven by pin 'mesh_0/router_2_2/buf_cwi_v1/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_2_2/empty_cwi_v0' driven by pin 'mesh_0/router_2_2/buf_cwi_v0/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_1_2/empty_pei_v1' driven by pin 'mesh_0/router_1_2/buf_pei_v1/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_1_2/empty_pei_v0' driven by pin 'mesh_0/router_1_2/buf_pei_v0/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_1_2/empty_sni_v1' driven by pin 'mesh_0/router_1_2/buf_sni_v1/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_1_2/empty_sni_v0' driven by pin 'mesh_0/router_1_2/buf_sni_v0/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_1_2/empty_nsi_v1' driven by pin 'mesh_0/router_1_2/buf_nsi_v1/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_1_2/empty_nsi_v0' driven by pin 'mesh_0/router_1_2/buf_nsi_v0/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_1_2/empty_ccwi_v1' driven by pin 'mesh_0/router_1_2/buf_ccwi_v1/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_1_2/empty_ccwi_v0' driven by pin 'mesh_0/router_1_2/buf_ccwi_v0/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_1_2/empty_cwi_v1' driven by pin 'mesh_0/router_1_2/buf_cwi_v1/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_1_2/empty_cwi_v0' driven by pin 'mesh_0/router_1_2/buf_cwi_v0/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_0_2/empty_pei_v1' driven by pin 'mesh_0/router_0_2/buf_pei_v1/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_0_2/empty_pei_v0' driven by pin 'mesh_0/router_0_2/buf_pei_v0/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_0_2/empty_sni_v1' driven by pin 'mesh_0/router_0_2/buf_sni_v1/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_0_2/empty_sni_v0' driven by pin 'mesh_0/router_0_2/buf_sni_v0/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_0_2/empty_nsi_v1' driven by pin 'mesh_0/router_0_2/buf_nsi_v1/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_0_2/empty_nsi_v0' driven by pin 'mesh_0/router_0_2/buf_nsi_v0/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_0_2/empty_ccwi_v1' driven by pin 'mesh_0/router_0_2/buf_ccwi_v1/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_0_2/empty_ccwi_v0' driven by pin 'mesh_0/router_0_2/buf_ccwi_v0/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_0_2/empty_cwi_v1' driven by pin 'mesh_0/router_0_2/buf_cwi_v1/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_0_2/empty_cwi_v0' driven by pin 'mesh_0/router_0_2/buf_cwi_v0/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_2_1/empty_pei_v1' driven by pin 'mesh_0/router_2_1/buf_pei_v1/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_2_1/empty_pei_v0' driven by pin 'mesh_0/router_2_1/buf_pei_v0/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_2_1/empty_sni_v1' driven by pin 'mesh_0/router_2_1/buf_sni_v1/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_2_1/empty_sni_v0' driven by pin 'mesh_0/router_2_1/buf_sni_v0/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_2_1/empty_nsi_v1' driven by pin 'mesh_0/router_2_1/buf_nsi_v1/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_2_1/empty_nsi_v0' driven by pin 'mesh_0/router_2_1/buf_nsi_v0/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_2_1/empty_ccwi_v1' driven by pin 'mesh_0/router_2_1/buf_ccwi_v1/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_2_1/empty_ccwi_v0' driven by pin 'mesh_0/router_2_1/buf_ccwi_v0/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_2_1/empty_cwi_v1' driven by pin 'mesh_0/router_2_1/buf_cwi_v1/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_2_1/empty_cwi_v0' driven by pin 'mesh_0/router_2_1/buf_cwi_v0/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_1_1/empty_pei_v1' driven by pin 'mesh_0/router_1_1/buf_pei_v1/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_1_1/empty_pei_v0' driven by pin 'mesh_0/router_1_1/buf_pei_v0/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_1_1/empty_sni_v1' driven by pin 'mesh_0/router_1_1/buf_sni_v1/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_1_1/empty_sni_v0' driven by pin 'mesh_0/router_1_1/buf_sni_v0/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_1_1/empty_nsi_v1' driven by pin 'mesh_0/router_1_1/buf_nsi_v1/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_1_1/empty_nsi_v0' driven by pin 'mesh_0/router_1_1/buf_nsi_v0/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_1_1/empty_ccwi_v1' driven by pin 'mesh_0/router_1_1/buf_ccwi_v1/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_1_1/empty_ccwi_v0' driven by pin 'mesh_0/router_1_1/buf_ccwi_v0/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_1_1/empty_cwi_v1' driven by pin 'mesh_0/router_1_1/buf_cwi_v1/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_1_1/empty_cwi_v0' driven by pin 'mesh_0/router_1_1/buf_cwi_v0/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_0_1/empty_pei_v1' driven by pin 'mesh_0/router_0_1/buf_pei_v1/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_0_1/empty_pei_v0' driven by pin 'mesh_0/router_0_1/buf_pei_v0/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_0_1/empty_sni_v1' driven by pin 'mesh_0/router_0_1/buf_sni_v1/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_0_1/empty_sni_v0' driven by pin 'mesh_0/router_0_1/buf_sni_v0/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_0_1/empty_nsi_v1' driven by pin 'mesh_0/router_0_1/buf_nsi_v1/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_0_1/empty_nsi_v0' driven by pin 'mesh_0/router_0_1/buf_nsi_v0/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_0_1/empty_ccwi_v1' driven by pin 'mesh_0/router_0_1/buf_ccwi_v1/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_0_1/empty_ccwi_v0' driven by pin 'mesh_0/router_0_1/buf_ccwi_v0/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_0_1/empty_cwi_v1' driven by pin 'mesh_0/router_0_1/buf_cwi_v1/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_0_1/empty_cwi_v0' driven by pin 'mesh_0/router_0_1/buf_cwi_v0/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_2_0/empty_pei_v1' driven by pin 'mesh_0/router_2_0/buf_pei_v1/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_2_0/empty_pei_v0' driven by pin 'mesh_0/router_2_0/buf_pei_v0/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_2_0/empty_sni_v1' driven by pin 'mesh_0/router_2_0/buf_sni_v1/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_2_0/empty_sni_v0' driven by pin 'mesh_0/router_2_0/buf_sni_v0/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_2_0/empty_nsi_v1' driven by pin 'mesh_0/router_2_0/buf_nsi_v1/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_2_0/empty_nsi_v0' driven by pin 'mesh_0/router_2_0/buf_nsi_v0/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_2_0/empty_ccwi_v1' driven by pin 'mesh_0/router_2_0/buf_ccwi_v1/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_2_0/empty_ccwi_v0' driven by pin 'mesh_0/router_2_0/buf_ccwi_v0/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_2_0/empty_cwi_v1' driven by pin 'mesh_0/router_2_0/buf_cwi_v1/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_2_0/empty_cwi_v0' driven by pin 'mesh_0/router_2_0/buf_cwi_v0/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_1_0/empty_pei_v1' driven by pin 'mesh_0/router_1_0/buf_pei_v1/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_1_0/empty_pei_v0' driven by pin 'mesh_0/router_1_0/buf_pei_v0/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_1_0/empty_sni_v1' driven by pin 'mesh_0/router_1_0/buf_sni_v1/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_1_0/empty_sni_v0' driven by pin 'mesh_0/router_1_0/buf_sni_v0/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_1_0/empty_nsi_v1' driven by pin 'mesh_0/router_1_0/buf_nsi_v1/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_1_0/empty_nsi_v0' driven by pin 'mesh_0/router_1_0/buf_nsi_v0/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_1_0/empty_ccwi_v1' driven by pin 'mesh_0/router_1_0/buf_ccwi_v1/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_1_0/empty_ccwi_v0' driven by pin 'mesh_0/router_1_0/buf_ccwi_v0/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_1_0/empty_cwi_v1' driven by pin 'mesh_0/router_1_0/buf_cwi_v1/empty' has no loads. (LINT-2)
+Warning: In design 'cardinal_noc', net 'mesh_0/router_1_0/empty_cwi_v0' driven by pin 'mesh_0/router_1_0/buf_cwi_v0/empty' has no loads. (LINT-2)
+Warning: In design 'gold_mesh', output port 'node00_polarity' is connected directly to output port 'node22_polarity'. (LINT-31)
+Warning: In design 'gold_mesh', output port 'node00_polarity' is connected directly to output port 'node12_polarity'. (LINT-31)
+Warning: In design 'gold_mesh', output port 'node00_polarity' is connected directly to output port 'node02_polarity'. (LINT-31)
+Warning: In design 'gold_mesh', output port 'node00_polarity' is connected directly to output port 'node21_polarity'. (LINT-31)
+Warning: In design 'gold_mesh', output port 'node00_polarity' is connected directly to output port 'node11_polarity'. (LINT-31)
+Warning: In design 'gold_mesh', output port 'node00_polarity' is connected directly to output port 'node01_polarity'. (LINT-31)
+Warning: In design 'gold_mesh', output port 'node00_polarity' is connected directly to output port 'node20_polarity'. (LINT-31)
+Warning: In design 'gold_mesh', output port 'node00_polarity' is connected directly to output port 'node10_polarity'. (LINT-31)
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwsi' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[63]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[62]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[61]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[60]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[59]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[58]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[57]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[56]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[55]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[54]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[53]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[52]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[51]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[50]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[49]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[48]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[47]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[46]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[45]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[44]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[43]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[42]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[41]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[40]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[39]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[38]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[37]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[36]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[35]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[34]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[33]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[32]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[31]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[30]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[29]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[28]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[27]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[26]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[25]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[24]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[23]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[22]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[21]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[20]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[19]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[18]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[17]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[16]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[15]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[14]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[13]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[12]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[11]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[10]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[9]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[8]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[7]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[6]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[5]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[4]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[3]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[2]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[1]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[0]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'snsi' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[63]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[62]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[61]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[60]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[59]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[58]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[57]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[56]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[55]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[54]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[53]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[52]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[51]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[50]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[49]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[48]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[47]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[46]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[45]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[44]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[43]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[42]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[41]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[40]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[39]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[38]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[37]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[36]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[35]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[34]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[33]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[32]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[31]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[30]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[29]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[28]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[27]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[26]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[25]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[24]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[23]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[22]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[21]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[20]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[19]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[18]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[17]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[16]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[15]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[14]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[13]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[12]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[11]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[10]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[9]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[8]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[7]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[6]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[5]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[4]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[3]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[2]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[1]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[0]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'snsi' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[63]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[62]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[61]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[60]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[59]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[58]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[57]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[56]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[55]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[54]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[53]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[52]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[51]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[50]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[49]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[48]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[47]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[46]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[45]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[44]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[43]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[42]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[41]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[40]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[39]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[38]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[37]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[36]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[35]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[34]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[33]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[32]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[31]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[30]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[29]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[28]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[27]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[26]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[25]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[24]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[23]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[22]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[21]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[20]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[19]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[18]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[17]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[16]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[15]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[14]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[13]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[12]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[11]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[10]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[9]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[8]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[7]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[6]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[5]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[4]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[3]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[2]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[1]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[0]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwsi' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[63]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[62]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[61]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[60]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[59]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[58]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[57]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[56]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[55]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[54]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[53]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[52]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[51]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[50]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[49]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[48]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[47]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[46]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[45]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[44]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[43]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[42]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[41]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[40]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[39]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[38]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[37]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[36]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[35]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[34]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[33]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[32]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[31]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[30]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[29]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[28]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[27]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[26]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[25]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[24]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[23]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[22]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[21]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[20]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[19]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[18]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[17]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[16]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[15]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[14]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[13]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[12]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[11]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[10]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[9]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[8]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[7]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[6]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[5]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[4]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[3]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[2]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[1]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[0]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'snsi' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[63]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[62]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[61]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[60]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[59]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[58]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[57]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[56]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[55]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[54]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[53]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[52]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[51]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[50]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[49]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[48]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[47]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[46]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[45]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[44]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[43]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[42]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[41]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[40]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[39]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[38]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[37]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[36]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[35]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[34]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[33]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[32]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[31]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[30]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[29]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[28]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[27]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[26]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[25]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[24]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[23]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[22]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[21]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[20]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[19]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[18]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[17]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[16]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[15]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[14]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[13]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[12]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[11]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[10]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[9]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[8]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[7]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[6]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[5]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[4]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[3]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[2]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[1]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'sndi[0]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwsi' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[63]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[62]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[61]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[60]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[59]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[58]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[57]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[56]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[55]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[54]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[53]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[52]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[51]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[50]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[49]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[48]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[47]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[46]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[45]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[44]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[43]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[42]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[41]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[40]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[39]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[38]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[37]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[36]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[35]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[34]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[33]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[32]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[31]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[30]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[29]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[28]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[27]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[26]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[25]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[24]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[23]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[22]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[21]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[20]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[19]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[18]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[17]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[16]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[15]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[14]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[13]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[12]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[11]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[10]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[9]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[8]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[7]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[6]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[5]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[4]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[3]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[2]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[1]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[0]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwsi' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[63]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[62]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[61]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[60]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[59]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[58]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[57]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[56]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[55]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[54]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[53]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[52]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[51]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[50]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[49]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[48]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[47]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[46]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[45]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[44]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[43]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[42]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[41]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[40]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[39]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[38]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[37]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[36]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[35]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[34]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[33]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[32]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[31]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[30]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[29]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[28]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[27]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[26]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[25]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[24]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[23]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[22]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[21]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[20]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[19]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[18]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[17]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[16]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[15]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[14]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[13]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[12]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[11]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[10]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[9]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[8]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[7]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[6]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[5]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[4]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[3]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[2]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[1]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[0]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwsi' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[63]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[62]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[61]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[60]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[59]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[58]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[57]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[56]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[55]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[54]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[53]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[52]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[51]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[50]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[49]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[48]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[47]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[46]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[45]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[44]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[43]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[42]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[41]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[40]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[39]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[38]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[37]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[36]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[35]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[34]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[33]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[32]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[31]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[30]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[29]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[28]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[27]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[26]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[25]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[24]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[23]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[22]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[21]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[20]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[19]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[18]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[17]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[16]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[15]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[14]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[13]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[12]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[11]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[10]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[9]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[8]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[7]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[6]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[5]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[4]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[3]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[2]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[1]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cwdi[0]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nssi' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[63]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[62]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[61]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[60]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[59]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[58]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[57]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[56]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[55]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[54]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[53]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[52]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[51]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[50]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[49]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[48]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[47]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[46]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[45]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[44]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[43]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[42]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[41]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[40]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[39]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[38]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[37]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[36]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[35]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[34]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[33]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[32]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[31]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[30]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[29]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[28]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[27]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[26]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[25]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[24]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[23]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[22]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[21]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[20]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[19]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[18]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[17]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[16]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[15]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[14]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[13]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[12]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[11]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[10]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[9]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[8]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[7]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[6]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[5]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[4]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[3]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[2]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[1]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[0]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nssi' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[63]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[62]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[61]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[60]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[59]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[58]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[57]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[56]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[55]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[54]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[53]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[52]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[51]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[50]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[49]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[48]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[47]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[46]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[45]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[44]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[43]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[42]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[41]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[40]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[39]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[38]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[37]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[36]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[35]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[34]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[33]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[32]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[31]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[30]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[29]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[28]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[27]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[26]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[25]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[24]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[23]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[22]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[21]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[20]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[19]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[18]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[17]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[16]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[15]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[14]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[13]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[12]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[11]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[10]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[9]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[8]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[7]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[6]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[5]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[4]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[3]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[2]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[1]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_1_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[0]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwsi' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[63]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[62]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[61]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[60]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[59]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[58]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[57]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[56]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[55]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[54]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[53]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[52]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[51]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[50]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[49]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[48]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[47]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[46]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[45]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[44]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[43]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[42]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[41]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[40]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[39]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[38]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[37]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[36]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[35]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[34]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[33]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[32]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[31]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[30]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[29]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[28]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[27]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[26]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[25]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[24]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[23]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[22]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[21]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[20]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[19]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[18]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[17]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[16]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[15]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[14]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[13]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[12]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[11]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[10]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[9]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[8]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[7]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[6]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[5]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[4]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[3]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[2]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[1]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ccwdi[0]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nssi' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[63]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[62]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[61]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[60]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[59]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[58]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[57]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[56]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[55]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[54]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[53]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[52]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[51]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[50]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[49]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[48]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[47]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[46]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[45]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[44]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[43]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[42]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[41]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[40]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[39]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[38]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[37]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[36]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[35]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[34]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[33]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[32]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[31]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[30]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[29]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[28]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[27]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[26]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[25]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[24]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[23]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[22]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[21]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[20]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[19]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[18]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[17]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[16]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[15]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[14]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[13]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[12]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[11]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[10]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[9]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[8]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[7]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[6]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[5]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[4]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[3]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[2]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[1]' is connected to logic 0. 
+Warning: In design 'gold_mesh', a pin on submodule 'router_2_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'nsdi[0]' is connected to logic 0. 
+Warning: In design 'gold_mesh', the same net is connected to more than one pin on submodule 'router_0_0'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'cwsi', 'cwdi[63]'', 'cwdi[62]', 'cwdi[61]', 'cwdi[60]', 'cwdi[59]', 'cwdi[58]', 'cwdi[57]', 'cwdi[56]', 'cwdi[55]', 'cwdi[54]', 'cwdi[53]', 'cwdi[52]', 'cwdi[51]', 'cwdi[50]', 'cwdi[49]', 'cwdi[48]', 'cwdi[47]', 'cwdi[46]', 'cwdi[45]', 'cwdi[44]', 'cwdi[43]', 'cwdi[42]', 'cwdi[41]', 'cwdi[40]', 'cwdi[39]', 'cwdi[38]', 'cwdi[37]', 'cwdi[36]', 'cwdi[35]', 'cwdi[34]', 'cwdi[33]', 'cwdi[32]', 'cwdi[31]', 'cwdi[30]', 'cwdi[29]', 'cwdi[28]', 'cwdi[27]', 'cwdi[26]', 'cwdi[25]', 'cwdi[24]', 'cwdi[23]', 'cwdi[22]', 'cwdi[21]', 'cwdi[20]', 'cwdi[19]', 'cwdi[18]', 'cwdi[17]', 'cwdi[16]', 'cwdi[15]', 'cwdi[14]', 'cwdi[13]', 'cwdi[12]', 'cwdi[11]', 'cwdi[10]', 'cwdi[9]', 'cwdi[8]', 'cwdi[7]', 'cwdi[6]', 'cwdi[5]', 'cwdi[4]', 'cwdi[3]', 'cwdi[2]', 'cwdi[1]', 'cwdi[0]', 'snsi', 'sndi[63]', 'sndi[62]', 'sndi[61]', 'sndi[60]', 'sndi[59]', 'sndi[58]', 'sndi[57]', 'sndi[56]', 'sndi[55]', 'sndi[54]', 'sndi[53]', 'sndi[52]', 'sndi[51]', 'sndi[50]', 'sndi[49]', 'sndi[48]', 'sndi[47]', 'sndi[46]', 'sndi[45]', 'sndi[44]', 'sndi[43]', 'sndi[42]', 'sndi[41]', 'sndi[40]', 'sndi[39]', 'sndi[38]', 'sndi[37]', 'sndi[36]', 'sndi[35]', 'sndi[34]', 'sndi[33]', 'sndi[32]', 'sndi[31]', 'sndi[30]', 'sndi[29]', 'sndi[28]', 'sndi[27]', 'sndi[26]', 'sndi[25]', 'sndi[24]', 'sndi[23]', 'sndi[22]', 'sndi[21]', 'sndi[20]', 'sndi[19]', 'sndi[18]', 'sndi[17]', 'sndi[16]', 'sndi[15]', 'sndi[14]', 'sndi[13]', 'sndi[12]', 'sndi[11]', 'sndi[10]', 'sndi[9]', 'sndi[8]', 'sndi[7]', 'sndi[6]', 'sndi[5]', 'sndi[4]', 'sndi[3]', 'sndi[2]', 'sndi[1]', 'sndi[0]'.
+Warning: In design 'gold_mesh', the same net is connected to more than one pin on submodule 'router_1_0'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'snsi', 'sndi[63]'', 'sndi[62]', 'sndi[61]', 'sndi[60]', 'sndi[59]', 'sndi[58]', 'sndi[57]', 'sndi[56]', 'sndi[55]', 'sndi[54]', 'sndi[53]', 'sndi[52]', 'sndi[51]', 'sndi[50]', 'sndi[49]', 'sndi[48]', 'sndi[47]', 'sndi[46]', 'sndi[45]', 'sndi[44]', 'sndi[43]', 'sndi[42]', 'sndi[41]', 'sndi[40]', 'sndi[39]', 'sndi[38]', 'sndi[37]', 'sndi[36]', 'sndi[35]', 'sndi[34]', 'sndi[33]', 'sndi[32]', 'sndi[31]', 'sndi[30]', 'sndi[29]', 'sndi[28]', 'sndi[27]', 'sndi[26]', 'sndi[25]', 'sndi[24]', 'sndi[23]', 'sndi[22]', 'sndi[21]', 'sndi[20]', 'sndi[19]', 'sndi[18]', 'sndi[17]', 'sndi[16]', 'sndi[15]', 'sndi[14]', 'sndi[13]', 'sndi[12]', 'sndi[11]', 'sndi[10]', 'sndi[9]', 'sndi[8]', 'sndi[7]', 'sndi[6]', 'sndi[5]', 'sndi[4]', 'sndi[3]', 'sndi[2]', 'sndi[1]', 'sndi[0]'.
+Warning: In design 'gold_mesh', the same net is connected to more than one pin on submodule 'router_2_0'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'ccwsi', 'ccwdi[63]'', 'ccwdi[62]', 'ccwdi[61]', 'ccwdi[60]', 'ccwdi[59]', 'ccwdi[58]', 'ccwdi[57]', 'ccwdi[56]', 'ccwdi[55]', 'ccwdi[54]', 'ccwdi[53]', 'ccwdi[52]', 'ccwdi[51]', 'ccwdi[50]', 'ccwdi[49]', 'ccwdi[48]', 'ccwdi[47]', 'ccwdi[46]', 'ccwdi[45]', 'ccwdi[44]', 'ccwdi[43]', 'ccwdi[42]', 'ccwdi[41]', 'ccwdi[40]', 'ccwdi[39]', 'ccwdi[38]', 'ccwdi[37]', 'ccwdi[36]', 'ccwdi[35]', 'ccwdi[34]', 'ccwdi[33]', 'ccwdi[32]', 'ccwdi[31]', 'ccwdi[30]', 'ccwdi[29]', 'ccwdi[28]', 'ccwdi[27]', 'ccwdi[26]', 'ccwdi[25]', 'ccwdi[24]', 'ccwdi[23]', 'ccwdi[22]', 'ccwdi[21]', 'ccwdi[20]', 'ccwdi[19]', 'ccwdi[18]', 'ccwdi[17]', 'ccwdi[16]', 'ccwdi[15]', 'ccwdi[14]', 'ccwdi[13]', 'ccwdi[12]', 'ccwdi[11]', 'ccwdi[10]', 'ccwdi[9]', 'ccwdi[8]', 'ccwdi[7]', 'ccwdi[6]', 'ccwdi[5]', 'ccwdi[4]', 'ccwdi[3]', 'ccwdi[2]', 'ccwdi[1]', 'ccwdi[0]', 'snsi', 'sndi[63]', 'sndi[62]', 'sndi[61]', 'sndi[60]', 'sndi[59]', 'sndi[58]', 'sndi[57]', 'sndi[56]', 'sndi[55]', 'sndi[54]', 'sndi[53]', 'sndi[52]', 'sndi[51]', 'sndi[50]', 'sndi[49]', 'sndi[48]', 'sndi[47]', 'sndi[46]', 'sndi[45]', 'sndi[44]', 'sndi[43]', 'sndi[42]', 'sndi[41]', 'sndi[40]', 'sndi[39]', 'sndi[38]', 'sndi[37]', 'sndi[36]', 'sndi[35]', 'sndi[34]', 'sndi[33]', 'sndi[32]', 'sndi[31]', 'sndi[30]', 'sndi[29]', 'sndi[28]', 'sndi[27]', 'sndi[26]', 'sndi[25]', 'sndi[24]', 'sndi[23]', 'sndi[22]', 'sndi[21]', 'sndi[20]', 'sndi[19]', 'sndi[18]', 'sndi[17]', 'sndi[16]', 'sndi[15]', 'sndi[14]', 'sndi[13]', 'sndi[12]', 'sndi[11]', 'sndi[10]', 'sndi[9]', 'sndi[8]', 'sndi[7]', 'sndi[6]', 'sndi[5]', 'sndi[4]', 'sndi[3]', 'sndi[2]', 'sndi[1]', 'sndi[0]'.
+Warning: In design 'gold_mesh', the same net is connected to more than one pin on submodule 'router_0_1'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'cwsi', 'cwdi[63]'', 'cwdi[62]', 'cwdi[61]', 'cwdi[60]', 'cwdi[59]', 'cwdi[58]', 'cwdi[57]', 'cwdi[56]', 'cwdi[55]', 'cwdi[54]', 'cwdi[53]', 'cwdi[52]', 'cwdi[51]', 'cwdi[50]', 'cwdi[49]', 'cwdi[48]', 'cwdi[47]', 'cwdi[46]', 'cwdi[45]', 'cwdi[44]', 'cwdi[43]', 'cwdi[42]', 'cwdi[41]', 'cwdi[40]', 'cwdi[39]', 'cwdi[38]', 'cwdi[37]', 'cwdi[36]', 'cwdi[35]', 'cwdi[34]', 'cwdi[33]', 'cwdi[32]', 'cwdi[31]', 'cwdi[30]', 'cwdi[29]', 'cwdi[28]', 'cwdi[27]', 'cwdi[26]', 'cwdi[25]', 'cwdi[24]', 'cwdi[23]', 'cwdi[22]', 'cwdi[21]', 'cwdi[20]', 'cwdi[19]', 'cwdi[18]', 'cwdi[17]', 'cwdi[16]', 'cwdi[15]', 'cwdi[14]', 'cwdi[13]', 'cwdi[12]', 'cwdi[11]', 'cwdi[10]', 'cwdi[9]', 'cwdi[8]', 'cwdi[7]', 'cwdi[6]', 'cwdi[5]', 'cwdi[4]', 'cwdi[3]', 'cwdi[2]', 'cwdi[1]', 'cwdi[0]'.
+Warning: In design 'gold_mesh', the same net is connected to more than one pin on submodule 'router_2_1'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'ccwsi', 'ccwdi[63]'', 'ccwdi[62]', 'ccwdi[61]', 'ccwdi[60]', 'ccwdi[59]', 'ccwdi[58]', 'ccwdi[57]', 'ccwdi[56]', 'ccwdi[55]', 'ccwdi[54]', 'ccwdi[53]', 'ccwdi[52]', 'ccwdi[51]', 'ccwdi[50]', 'ccwdi[49]', 'ccwdi[48]', 'ccwdi[47]', 'ccwdi[46]', 'ccwdi[45]', 'ccwdi[44]', 'ccwdi[43]', 'ccwdi[42]', 'ccwdi[41]', 'ccwdi[40]', 'ccwdi[39]', 'ccwdi[38]', 'ccwdi[37]', 'ccwdi[36]', 'ccwdi[35]', 'ccwdi[34]', 'ccwdi[33]', 'ccwdi[32]', 'ccwdi[31]', 'ccwdi[30]', 'ccwdi[29]', 'ccwdi[28]', 'ccwdi[27]', 'ccwdi[26]', 'ccwdi[25]', 'ccwdi[24]', 'ccwdi[23]', 'ccwdi[22]', 'ccwdi[21]', 'ccwdi[20]', 'ccwdi[19]', 'ccwdi[18]', 'ccwdi[17]', 'ccwdi[16]', 'ccwdi[15]', 'ccwdi[14]', 'ccwdi[13]', 'ccwdi[12]', 'ccwdi[11]', 'ccwdi[10]', 'ccwdi[9]', 'ccwdi[8]', 'ccwdi[7]', 'ccwdi[6]', 'ccwdi[5]', 'ccwdi[4]', 'ccwdi[3]', 'ccwdi[2]', 'ccwdi[1]', 'ccwdi[0]'.
+Warning: In design 'gold_mesh', the same net is connected to more than one pin on submodule 'router_0_2'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'cwsi', 'cwdi[63]'', 'cwdi[62]', 'cwdi[61]', 'cwdi[60]', 'cwdi[59]', 'cwdi[58]', 'cwdi[57]', 'cwdi[56]', 'cwdi[55]', 'cwdi[54]', 'cwdi[53]', 'cwdi[52]', 'cwdi[51]', 'cwdi[50]', 'cwdi[49]', 'cwdi[48]', 'cwdi[47]', 'cwdi[46]', 'cwdi[45]', 'cwdi[44]', 'cwdi[43]', 'cwdi[42]', 'cwdi[41]', 'cwdi[40]', 'cwdi[39]', 'cwdi[38]', 'cwdi[37]', 'cwdi[36]', 'cwdi[35]', 'cwdi[34]', 'cwdi[33]', 'cwdi[32]', 'cwdi[31]', 'cwdi[30]', 'cwdi[29]', 'cwdi[28]', 'cwdi[27]', 'cwdi[26]', 'cwdi[25]', 'cwdi[24]', 'cwdi[23]', 'cwdi[22]', 'cwdi[21]', 'cwdi[20]', 'cwdi[19]', 'cwdi[18]', 'cwdi[17]', 'cwdi[16]', 'cwdi[15]', 'cwdi[14]', 'cwdi[13]', 'cwdi[12]', 'cwdi[11]', 'cwdi[10]', 'cwdi[9]', 'cwdi[8]', 'cwdi[7]', 'cwdi[6]', 'cwdi[5]', 'cwdi[4]', 'cwdi[3]', 'cwdi[2]', 'cwdi[1]', 'cwdi[0]', 'nssi', 'nsdi[63]', 'nsdi[62]', 'nsdi[61]', 'nsdi[60]', 'nsdi[59]', 'nsdi[58]', 'nsdi[57]', 'nsdi[56]', 'nsdi[55]', 'nsdi[54]', 'nsdi[53]', 'nsdi[52]', 'nsdi[51]', 'nsdi[50]', 'nsdi[49]', 'nsdi[48]', 'nsdi[47]', 'nsdi[46]', 'nsdi[45]', 'nsdi[44]', 'nsdi[43]', 'nsdi[42]', 'nsdi[41]', 'nsdi[40]', 'nsdi[39]', 'nsdi[38]', 'nsdi[37]', 'nsdi[36]', 'nsdi[35]', 'nsdi[34]', 'nsdi[33]', 'nsdi[32]', 'nsdi[31]', 'nsdi[30]', 'nsdi[29]', 'nsdi[28]', 'nsdi[27]', 'nsdi[26]', 'nsdi[25]', 'nsdi[24]', 'nsdi[23]', 'nsdi[22]', 'nsdi[21]', 'nsdi[20]', 'nsdi[19]', 'nsdi[18]', 'nsdi[17]', 'nsdi[16]', 'nsdi[15]', 'nsdi[14]', 'nsdi[13]', 'nsdi[12]', 'nsdi[11]', 'nsdi[10]', 'nsdi[9]', 'nsdi[8]', 'nsdi[7]', 'nsdi[6]', 'nsdi[5]', 'nsdi[4]', 'nsdi[3]', 'nsdi[2]', 'nsdi[1]', 'nsdi[0]'.
+Warning: In design 'gold_mesh', the same net is connected to more than one pin on submodule 'router_1_2'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'nssi', 'nsdi[63]'', 'nsdi[62]', 'nsdi[61]', 'nsdi[60]', 'nsdi[59]', 'nsdi[58]', 'nsdi[57]', 'nsdi[56]', 'nsdi[55]', 'nsdi[54]', 'nsdi[53]', 'nsdi[52]', 'nsdi[51]', 'nsdi[50]', 'nsdi[49]', 'nsdi[48]', 'nsdi[47]', 'nsdi[46]', 'nsdi[45]', 'nsdi[44]', 'nsdi[43]', 'nsdi[42]', 'nsdi[41]', 'nsdi[40]', 'nsdi[39]', 'nsdi[38]', 'nsdi[37]', 'nsdi[36]', 'nsdi[35]', 'nsdi[34]', 'nsdi[33]', 'nsdi[32]', 'nsdi[31]', 'nsdi[30]', 'nsdi[29]', 'nsdi[28]', 'nsdi[27]', 'nsdi[26]', 'nsdi[25]', 'nsdi[24]', 'nsdi[23]', 'nsdi[22]', 'nsdi[21]', 'nsdi[20]', 'nsdi[19]', 'nsdi[18]', 'nsdi[17]', 'nsdi[16]', 'nsdi[15]', 'nsdi[14]', 'nsdi[13]', 'nsdi[12]', 'nsdi[11]', 'nsdi[10]', 'nsdi[9]', 'nsdi[8]', 'nsdi[7]', 'nsdi[6]', 'nsdi[5]', 'nsdi[4]', 'nsdi[3]', 'nsdi[2]', 'nsdi[1]', 'nsdi[0]'.
+Warning: In design 'gold_mesh', the same net is connected to more than one pin on submodule 'router_2_2'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'ccwsi', 'ccwdi[63]'', 'ccwdi[62]', 'ccwdi[61]', 'ccwdi[60]', 'ccwdi[59]', 'ccwdi[58]', 'ccwdi[57]', 'ccwdi[56]', 'ccwdi[55]', 'ccwdi[54]', 'ccwdi[53]', 'ccwdi[52]', 'ccwdi[51]', 'ccwdi[50]', 'ccwdi[49]', 'ccwdi[48]', 'ccwdi[47]', 'ccwdi[46]', 'ccwdi[45]', 'ccwdi[44]', 'ccwdi[43]', 'ccwdi[42]', 'ccwdi[41]', 'ccwdi[40]', 'ccwdi[39]', 'ccwdi[38]', 'ccwdi[37]', 'ccwdi[36]', 'ccwdi[35]', 'ccwdi[34]', 'ccwdi[33]', 'ccwdi[32]', 'ccwdi[31]', 'ccwdi[30]', 'ccwdi[29]', 'ccwdi[28]', 'ccwdi[27]', 'ccwdi[26]', 'ccwdi[25]', 'ccwdi[24]', 'ccwdi[23]', 'ccwdi[22]', 'ccwdi[21]', 'ccwdi[20]', 'ccwdi[19]', 'ccwdi[18]', 'ccwdi[17]', 'ccwdi[16]', 'ccwdi[15]', 'ccwdi[14]', 'ccwdi[13]', 'ccwdi[12]', 'ccwdi[11]', 'ccwdi[10]', 'ccwdi[9]', 'ccwdi[8]', 'ccwdi[7]', 'ccwdi[6]', 'ccwdi[5]', 'ccwdi[4]', 'ccwdi[3]', 'ccwdi[2]', 'ccwdi[1]', 'ccwdi[0]', 'nssi', 'nsdi[63]', 'nsdi[62]', 'nsdi[61]', 'nsdi[60]', 'nsdi[59]', 'nsdi[58]', 'nsdi[57]', 'nsdi[56]', 'nsdi[55]', 'nsdi[54]', 'nsdi[53]', 'nsdi[52]', 'nsdi[51]', 'nsdi[50]', 'nsdi[49]', 'nsdi[48]', 'nsdi[47]', 'nsdi[46]', 'nsdi[45]', 'nsdi[44]', 'nsdi[43]', 'nsdi[42]', 'nsdi[41]', 'nsdi[40]', 'nsdi[39]', 'nsdi[38]', 'nsdi[37]', 'nsdi[36]', 'nsdi[35]', 'nsdi[34]', 'nsdi[33]', 'nsdi[32]', 'nsdi[31]', 'nsdi[30]', 'nsdi[29]', 'nsdi[28]', 'nsdi[27]', 'nsdi[26]', 'nsdi[25]', 'nsdi[24]', 'nsdi[23]', 'nsdi[22]', 'nsdi[21]', 'nsdi[20]', 'nsdi[19]', 'nsdi[18]', 'nsdi[17]', 'nsdi[16]', 'nsdi[15]', 'nsdi[14]', 'nsdi[13]', 'nsdi[12]', 'nsdi[11]', 'nsdi[10]', 'nsdi[9]', 'nsdi[8]', 'nsdi[7]', 'nsdi[6]', 'nsdi[5]', 'nsdi[4]', 'nsdi[3]', 'nsdi[2]', 'nsdi[1]', 'nsdi[0]'.
+Warning: In design 'gold_router_8', input pin 'B' of leaf cell 'C5377' is connected to undriven net 'ccwro'.  (LINT-58)
+Warning: In design 'gold_router_8', input pin 'B' of leaf cell 'C5378' is connected to undriven net 'ccwro'.  (LINT-58)
+Warning: In design 'gold_router_8', input pin 'B' of leaf cell 'C5381' is connected to undriven net 'nsro'.  (LINT-58)
+Warning: In design 'gold_router_8', input pin 'B' of leaf cell 'C5382' is connected to undriven net 'nsro'.  (LINT-58)
+Warning: In design 'gold_router_8', input pin 'B' of leaf cell 'C5401' is connected to undriven net 'ccwro'.  (LINT-58)
+Warning: In design 'gold_router_8', input pin 'B' of leaf cell 'C5404' is connected to undriven net 'ccwro'.  (LINT-58)
+Warning: In design 'gold_router_8', input pin 'B' of leaf cell 'C5408' is connected to undriven net 'nsro'.  (LINT-58)
+Warning: In design 'gold_router_8', input pin 'B' of leaf cell 'C5411' is connected to undriven net 'nsro'.  (LINT-58)
+Warning: In design 'gold_router_0', input pin 'B' of leaf cell 'C5373' is connected to undriven net 'cwro'.  (LINT-58)
+Warning: In design 'gold_router_0', input pin 'B' of leaf cell 'C5374' is connected to undriven net 'cwro'.  (LINT-58)
+Warning: In design 'gold_router_0', input pin 'B' of leaf cell 'C5385' is connected to undriven net 'snro'.  (LINT-58)
+Warning: In design 'gold_router_0', input pin 'B' of leaf cell 'C5386' is connected to undriven net 'snro'.  (LINT-58)
+Warning: In design 'gold_router_0', input pin 'B' of leaf cell 'C5394' is connected to undriven net 'cwro'.  (LINT-58)
+Warning: In design 'gold_router_0', input pin 'B' of leaf cell 'C5397' is connected to undriven net 'cwro'.  (LINT-58)
+Warning: In design 'gold_router_0', input pin 'B' of leaf cell 'C5415' is connected to undriven net 'snro'.  (LINT-58)
+Warning: In design 'gold_router_0', input pin 'B' of leaf cell 'C5418' is connected to undriven net 'snro'.  (LINT-58)
+Warning: In design 'gold_router_1', input pin 'B' of leaf cell 'C5385' is connected to undriven net 'snro'.  (LINT-58)
+Warning: In design 'gold_router_1', input pin 'B' of leaf cell 'C5386' is connected to undriven net 'snro'.  (LINT-58)
+Warning: In design 'gold_router_1', input pin 'B' of leaf cell 'C5415' is connected to undriven net 'snro'.  (LINT-58)
+Warning: In design 'gold_router_1', input pin 'B' of leaf cell 'C5418' is connected to undriven net 'snro'.  (LINT-58)
+Warning: In design 'gold_router_2', input pin 'B' of leaf cell 'C5377' is connected to undriven net 'ccwro'.  (LINT-58)
+Warning: In design 'gold_router_2', input pin 'B' of leaf cell 'C5378' is connected to undriven net 'ccwro'.  (LINT-58)
+Warning: In design 'gold_router_2', input pin 'B' of leaf cell 'C5385' is connected to undriven net 'snro'.  (LINT-58)
+Warning: In design 'gold_router_2', input pin 'B' of leaf cell 'C5386' is connected to undriven net 'snro'.  (LINT-58)
+Warning: In design 'gold_router_2', input pin 'B' of leaf cell 'C5401' is connected to undriven net 'ccwro'.  (LINT-58)
+Warning: In design 'gold_router_2', input pin 'B' of leaf cell 'C5404' is connected to undriven net 'ccwro'.  (LINT-58)
+Warning: In design 'gold_router_2', input pin 'B' of leaf cell 'C5415' is connected to undriven net 'snro'.  (LINT-58)
+Warning: In design 'gold_router_2', input pin 'B' of leaf cell 'C5418' is connected to undriven net 'snro'.  (LINT-58)
+Warning: In design 'gold_router_3', input pin 'B' of leaf cell 'C5373' is connected to undriven net 'cwro'.  (LINT-58)
+Warning: In design 'gold_router_3', input pin 'B' of leaf cell 'C5374' is connected to undriven net 'cwro'.  (LINT-58)
+Warning: In design 'gold_router_3', input pin 'B' of leaf cell 'C5394' is connected to undriven net 'cwro'.  (LINT-58)
+Warning: In design 'gold_router_3', input pin 'B' of leaf cell 'C5397' is connected to undriven net 'cwro'.  (LINT-58)
+Warning: In design 'gold_router_5', input pin 'B' of leaf cell 'C5377' is connected to undriven net 'ccwro'.  (LINT-58)
+Warning: In design 'gold_router_5', input pin 'B' of leaf cell 'C5378' is connected to undriven net 'ccwro'.  (LINT-58)
+Warning: In design 'gold_router_5', input pin 'B' of leaf cell 'C5401' is connected to undriven net 'ccwro'.  (LINT-58)
+Warning: In design 'gold_router_5', input pin 'B' of leaf cell 'C5404' is connected to undriven net 'ccwro'.  (LINT-58)
+Warning: In design 'gold_router_6', input pin 'B' of leaf cell 'C5373' is connected to undriven net 'cwro'.  (LINT-58)
+Warning: In design 'gold_router_6', input pin 'B' of leaf cell 'C5374' is connected to undriven net 'cwro'.  (LINT-58)
+Warning: In design 'gold_router_6', input pin 'B' of leaf cell 'C5381' is connected to undriven net 'nsro'.  (LINT-58)
+Warning: In design 'gold_router_6', input pin 'B' of leaf cell 'C5382' is connected to undriven net 'nsro'.  (LINT-58)
+Warning: In design 'gold_router_6', input pin 'B' of leaf cell 'C5394' is connected to undriven net 'cwro'.  (LINT-58)
+Warning: In design 'gold_router_6', input pin 'B' of leaf cell 'C5397' is connected to undriven net 'cwro'.  (LINT-58)
+Warning: In design 'gold_router_6', input pin 'B' of leaf cell 'C5408' is connected to undriven net 'nsro'.  (LINT-58)
+Warning: In design 'gold_router_6', input pin 'B' of leaf cell 'C5411' is connected to undriven net 'nsro'.  (LINT-58)
+Warning: In design 'gold_router_7', input pin 'B' of leaf cell 'C5381' is connected to undriven net 'nsro'.  (LINT-58)
+Warning: In design 'gold_router_7', input pin 'B' of leaf cell 'C5382' is connected to undriven net 'nsro'.  (LINT-58)
+Warning: In design 'gold_router_7', input pin 'B' of leaf cell 'C5408' is connected to undriven net 'nsro'.  (LINT-58)
+Warning: In design 'gold_router_7', input pin 'B' of leaf cell 'C5411' is connected to undriven net 'nsro'.  (LINT-58)
+Warning: In design 'gold_mesh', input pin 'ccwro' of hierarchical cell 'router_0_0' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'gold_mesh', input pin 'nsro' of hierarchical cell 'router_0_0' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'gold_mesh', input pin 'nsro' of hierarchical cell 'router_1_0' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'gold_mesh', input pin 'cwro' of hierarchical cell 'router_2_0' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'gold_mesh', input pin 'nsro' of hierarchical cell 'router_2_0' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'gold_mesh', input pin 'ccwro' of hierarchical cell 'router_0_1' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'gold_mesh', input pin 'cwro' of hierarchical cell 'router_2_1' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'gold_mesh', input pin 'ccwro' of hierarchical cell 'router_0_2' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'gold_mesh', input pin 'snro' of hierarchical cell 'router_0_2' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'gold_mesh', input pin 'snro' of hierarchical cell 'router_1_2' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'gold_mesh', input pin 'cwro' of hierarchical cell 'router_2_2' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'gold_mesh', input pin 'snro' of hierarchical cell 'router_2_2' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+1
