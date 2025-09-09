@@ -1,0 +1,48 @@
+****************************************
+Report : power
+        -analysis_effort low
+Design : mesh_general
+Version: K-2015.06-SP5-5
+Date   : Thu Apr 17 16:15:09 2025
+****************************************
+
+
+Library(s) Used:
+
+    gscl45nm (File: /home/scf-22/ee577/NCSU45PDK/FreePDK45/osu_soc/lib/files/gscl45nm.db)
+
+
+Operating Conditions: typical   Library: gscl45nm
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 1.1
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+  Cell Internal Power  =  10.5130 mW   (93%)
+  Net Switching Power  = 774.7303 uW    (7%)
+                         ---------
+Total Dynamic Power    =  11.2877 mW  (100%)
+
+Cell Leakage Power     = 595.0051 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register           9.8237        9.4474e-02        1.8901e+05           10.1072  (  85.06%)
+sequential     9.5358e-03        8.2086e-04        3.9205e+03        1.4277e-02  (   0.12%)
+combinational      0.6796            0.6794        4.0207e+05            1.7611  (  14.82%)
+--------------------------------------------------------------------------------------------------
+Total             10.5128 mW         0.7747 mW     5.9501e+05 nW        11.8825 mW
+1

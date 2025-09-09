@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : cardinal_cpu
+Version: K-2015.06-SP5-5
+Date   : Wed Apr 23 00:07:07 2025
+****************************************
+
+Library(s) Used:
+
+    gscl45nm (File: /home/scf-22/ee577/NCSU45PDK/FreePDK45/osu_soc/lib/files/gscl45nm.db)
+
+Number of ports:                         1017
+Number of nets:                        319064
+Number of cells:                       316457
+Number of combinational cells:         314066
+Number of sequential cells:              2383
+Number of macros/black boxes:               0
+Number of buf/inv:                     143879
+Number of references:                      35
+
+Combinational area:             707297.972359
+Buf/Inv area:                   222970.057257
+Noncombinational area:           18868.206081
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                726166.178440
+Total area:                 undefined
+1

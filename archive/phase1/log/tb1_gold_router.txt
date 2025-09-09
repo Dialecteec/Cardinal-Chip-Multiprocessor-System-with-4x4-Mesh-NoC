@@ -1,0 +1,52 @@
+# At time 0, we are in reset...
+# Time=25000: Reset de-asserted. Start tests.
+# [45000] WEST-SEND: 0x0030deadea570000
+# [45000] WAIT: expecting packet on EAST (cwso/cwdo).
+# [65000] WEST-SEND done handshake.
+# [75000] EAST-RX got 0x0010deadea570000 on cwdo
+# [85000] EAST-SEND: 0x4030e000bad00000
+# [85000] WAIT: expecting packet on WEST (ccwso/ccwdo).
+# [105000] EAST-SEND done handshake.
+# [115000] WEST-RX got 0x4010e000bad00000 on ccwdo
+# [125000] NORTH-SEND: 0x0001b00050000000
+# [125000] WAIT: expecting packet on SOUTH (nsso/nsdo).
+# [145000] NORTH-SEND done handshake.
+# [155000] SOUTH-RX got 0x0000b00050000000 on nsdo
+# [165000] SOUTH-SEND: 0x2001005000b00000
+# [165000] WAIT: expecting packet on NORTH (snso/sndo).
+# [185000] SOUTH-SEND done handshake.
+# [195000] NORTH-RX got 0x2000005000b00000 on sndo
+# [205000] WEST-SEND: 0x0000facefeed0000
+# [205000] WAIT: expecting packet on local PE (peso/pedo).
+# [225000] WEST-SEND done handshake.
+# [235000] PE-RX got 0x0000facefeed0000 on pedo
+# [245000] EAST-SEND: 0x0000777788880000
+# [245000] WAIT: expecting packet on local PE (peso/pedo).
+# [265000] EAST-SEND done handshake.
+# [275000] PE-RX got 0x0000777788880000 on pedo
+# [285000] WEST-SEND: 0x2001aaaabbbb0000
+# [305000] WEST-SEND done handshake.
+# [305000] WAIT: expecting packet on NORTH (snso/sndo).
+# [315000] NORTH-RX got 0x2001aaaabbbb0000 on sndo
+# [325000] EAST-SEND: 0x0001eeeedddd0000
+# [345000] EAST-SEND done handshake.
+# [345000] WAIT: expecting packet on SOUTH (nsso/nsdo).
+# [355000] SOUTH-RX got 0x0000eeeedddd0000 on nsdo
+# [365000] PE-SEND: 0x0010deadbeef0000
+# [365000] WAIT: expecting packet on EAST (cwso/cwdo).
+# [385000] PE-SEND done handshake.
+# [395000] EAST-RX got 0x0000deadbeef0000 on cwdo
+# [405000] PE-SEND: 0x4010000100020000
+# [405000] WAIT: expecting packet on WEST (ccwso/ccwdo).
+# [425000] PE-SEND done handshake.
+# [435000] WEST-RX got 0x4000000100020000 on ccwdo
+# [445000] NORTH-SEND: 0x0000111122220000
+# [445000] WAIT: expecting packet on local PE (peso/pedo).
+# [465000] NORTH-SEND done handshake.
+# [475000] PE-RX got 0x0000111122220000 on pedo
+# [485000] SOUTH-SEND: 0x0000333344440000
+# [485000] WAIT: expecting packet on local PE (peso/pedo).
+# [505000] SOUTH-SEND done handshake.
+# [515000] PE-RX got 0x0000333344440000 on pedo
+# [525000] All tests done. End of simulation.
+# ** Note: $finish

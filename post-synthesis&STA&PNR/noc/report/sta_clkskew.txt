@@ -1,0 +1,13 @@
+****************************************
+Report : clock_skew
+Design : cardinal_noc
+Version: L-2016.06-SP1
+Date   : Mon Apr 28 16:35:44 2025
+****************************************
+
+
+                Min Condition Source Latency      Max Condition Source Latency
+------------------------------------------------------------------------------------------
+Object        Early_r Early_f  Late_r  Late_f   Early_r Early_f  Late_r  Late_f  Rel_clk
+------------------------------------------------------------------------------------------
+clk              0.50    0.50    0.50    0.50      0.50    0.50    0.50    0.50

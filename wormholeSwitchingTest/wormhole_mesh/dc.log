@@ -1,0 +1,1305 @@
+######################################################################
+#
+# EE-577b 2020 FALL
+# : DesignCompiler synthesis script
+#   modified by Linyi Hong
+#
+# use this script as a template for synthesizing combinational logic
+#
+######################################################################
+# Setting variable for design_name. (top module name)
+set design_name mesh_general;
+mesh_general
+## For NCSUFreePDK45nm library
+set search_path [ list .                   /home/scf-22/ee577/NCSU45PDK/FreePDK45/osu_soc/lib/files ]
+. /home/scf-22/ee577/NCSU45PDK/FreePDK45/osu_soc/lib/files
+set target_library { gscl45nm.db }
+ gscl45nm.db 
+set synthetic_library [list dw_foundation.sldb standard.sldb ]
+dw_foundation.sldb standard.sldb
+set link_library [list * gscl45nm.db dw_foundation.sldb standard.sldb]
+* gscl45nm.db dw_foundation.sldb standard.sldb
+# Reading source verilog file.
+# copy your verilog file into ./src/ before synthesis.
+read_verilog ./src/buffer.sv;
+Loading db file '/home/scf-22/ee577/NCSU45PDK/FreePDK45/osu_soc/lib/files/gscl45nm.db'
+Loading db file '/usr/local/synopsys/Design_Compiler/default/libraries/syn/dw_foundation.sldb'
+Loading db file '/usr/local/synopsys/Design_Compiler/default/libraries/syn/standard.sldb'
+Loading db file '/usr/local/synopsys/Design_Compiler/default/libraries/syn/gtech.db'
+  Loading link library 'gscl45nm'
+  Loading link library 'gtech'
+Loading verilog file '/home/viterbi/07/ruochenj/EE577B/mesh_wormhole/src/buffer.sv'
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /home/viterbi/07/ruochenj/EE577B/mesh_wormhole/src/buffer.sv
+
+Inferred memory devices in process
+        in routine buffer line 39 in file
+                '/home/viterbi/07/ruochenj/EE577B/mesh_wormhole/src/buffer.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    write_ptr_reg    | Flip-flop |   2   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine buffer line 64 in file
+                '/home/viterbi/07/ruochenj/EE577B/mesh_wormhole/src/buffer.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    read_ptr_reg     | Flip-flop |   2   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine buffer line 92 in file
+                '/home/viterbi/07/ruochenj/EE577B/mesh_wormhole/src/buffer.sv'.
+===========================================================================
+|    Register Name    | Type  | Width | Bus | MB | AR | AS | SR | SS | ST |
+===========================================================================
+|      empty_reg      | Latch |   1   |  N  | N  | N  | N  | -  | -  | -  |
+|      full_reg       | Latch |   1   |  N  | N  | N  | N  | -  | -  | -  |
+===========================================================================
+Presto compilation completed successfully.
+Current design is now '/home/viterbi/07/ruochenj/EE577B/mesh_wormhole/src/buffer.db:buffer'
+Loaded 1 design.
+Current design is 'buffer'.
+buffer
+read_verilog ./src/demux_1to5.sv;
+Loading verilog file '/home/viterbi/07/ruochenj/EE577B/mesh_wormhole/src/demux_1to5.sv'
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /home/viterbi/07/ruochenj/EE577B/mesh_wormhole/src/demux_1to5.sv
+
+Statistics for case statements in always block at line 18 in file
+        '/home/viterbi/07/ruochenj/EE577B/mesh_wormhole/src/demux_1to5.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            23            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Current design is now '/home/viterbi/07/ruochenj/EE577B/mesh_wormhole/src/demux_1to5.db:demux_1to5'
+Loaded 1 design.
+Current design is 'demux_1to5'.
+demux_1to5
+read_verilog ./src/one_hot_mux5_1.sv;
+Loading verilog file '/home/viterbi/07/ruochenj/EE577B/mesh_wormhole/src/one_hot_mux5_1.sv'
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /home/viterbi/07/ruochenj/EE577B/mesh_wormhole/src/one_hot_mux5_1.sv
+
+Statistics for case statements in always block at line 27 in file
+        '/home/viterbi/07/ruochenj/EE577B/mesh_wormhole/src/one_hot_mux5_1.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            28            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Current design is now '/home/viterbi/07/ruochenj/EE577B/mesh_wormhole/src/one_hot_mux5_1.db:one_hot_mux5_1'
+Loaded 1 design.
+Current design is 'one_hot_mux5_1'.
+one_hot_mux5_1
+read_verilog ./src/round_robin_arbiter.sv;
+Loading verilog file '/home/viterbi/07/ruochenj/EE577B/mesh_wormhole/src/round_robin_arbiter.sv'
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /home/viterbi/07/ruochenj/EE577B/mesh_wormhole/src/round_robin_arbiter.sv
+
+Statistics for case statements in always block at line 66 in file
+        '/home/viterbi/07/ruochenj/EE577B/mesh_wormhole/src/round_robin_arbiter.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            71            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+        in routine round_robin_arbiter line 39 in file
+                '/home/viterbi/07/ruochenj/EE577B/mesh_wormhole/src/round_robin_arbiter.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      state_reg      | Flip-flop |   3   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine round_robin_arbiter line 48 in file
+                '/home/viterbi/07/ruochenj/EE577B/mesh_wormhole/src/round_robin_arbiter.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      count_reg      | Flip-flop |   2   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Current design is now '/home/viterbi/07/ruochenj/EE577B/mesh_wormhole/src/round_robin_arbiter.db:round_robin_arbiter'
+Loaded 1 design.
+Current design is 'round_robin_arbiter'.
+round_robin_arbiter
+read_verilog ./src/ram.sv;
+Loading verilog file '/home/viterbi/07/ruochenj/EE577B/mesh_wormhole/src/ram.sv'
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /home/viterbi/07/ruochenj/EE577B/mesh_wormhole/src/ram.sv
+
+Inferred memory devices in process
+        in routine ram line 29 in file
+                '/home/viterbi/07/ruochenj/EE577B/mesh_wormhole/src/ram.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       RAM_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Statistics for MUX_OPs
+======================================================
+| block name/line  | Inputs | Outputs | # sel inputs |
+======================================================
+|      ram/27      |   4    |    8    |      2       |
+======================================================
+Presto compilation completed successfully.
+Current design is now '/home/viterbi/07/ruochenj/EE577B/mesh_wormhole/src/ram.db:ram'
+Loaded 1 design.
+Current design is 'ram'.
+ram
+read_verilog ./src/route_compute.sv;
+Loading verilog file '/home/viterbi/07/ruochenj/EE577B/mesh_wormhole/src/route_compute.sv'
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /home/viterbi/07/ruochenj/EE577B/mesh_wormhole/src/route_compute.sv
+Warning:  /home/viterbi/07/ruochenj/EE577B/mesh_wormhole/src/route_compute.sv:54: signed to unsigned assignment occurs. (VER-318)
+Warning:  /home/viterbi/07/ruochenj/EE577B/mesh_wormhole/src/route_compute.sv:55: signed to unsigned assignment occurs. (VER-318)
+Presto compilation completed successfully.
+Current design is now '/home/viterbi/07/ruochenj/EE577B/mesh_wormhole/src/route_compute.db:route_compute'
+Loaded 1 design.
+Current design is 'route_compute'.
+route_compute
+read_verilog ./src/switch_allocator.sv;
+Loading verilog file '/home/viterbi/07/ruochenj/EE577B/mesh_wormhole/src/switch_allocator.sv'
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /home/viterbi/07/ruochenj/EE577B/mesh_wormhole/src/switch_allocator.sv
+Presto compilation completed successfully.
+Current design is now '/home/viterbi/07/ruochenj/EE577B/mesh_wormhole/src/switch_allocator.db:switch_allocator'
+Loaded 1 design.
+Current design is 'switch_allocator'.
+switch_allocator
+read_verilog ./src/Router.v;
+Loading verilog file '/home/viterbi/07/ruochenj/EE577B/mesh_wormhole/src/Router.v'
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /home/viterbi/07/ruochenj/EE577B/mesh_wormhole/src/Router.v
+
+Inferred memory devices in process
+        in routine Router line 72 in file
+                '/home/viterbi/07/ruochenj/EE577B/mesh_wormhole/src/Router.v'.
+=================================================================================
+|     Register Name     |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+=================================================================================
+| router_out_full_3_reg | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+| router_out_full_4_reg | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+| router_out_full_0_reg | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+| router_out_full_1_reg | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+| router_out_full_2_reg | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+=================================================================================
+Presto compilation completed successfully.
+Current design is now '/home/viterbi/07/ruochenj/EE577B/mesh_wormhole/src/Router.db:Router'
+Loaded 1 design.
+Current design is 'Router'.
+Router
+read_verilog ./src/mesh_general.sv;
+Loading verilog file '/home/viterbi/07/ruochenj/EE577B/mesh_wormhole/src/mesh_general.sv'
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /home/viterbi/07/ruochenj/EE577B/mesh_wormhole/src/mesh_general.sv
+Presto compilation completed successfully.
+Current design is now '/home/viterbi/07/ruochenj/EE577B/mesh_wormhole/src/mesh_general.db:mesh_general'
+Loaded 1 design.
+Current design is 'mesh_general'.
+mesh_general
+# Setting $design_name as current working design.
+# Use this command before setting any constraints.
+current_design $design_name ;
+Current design is 'mesh_general'.
+{mesh_general}
+# If you have multiple instances of the same module,
+# use this so that DesignCompiler optimizes each instance separately.
+uniquify ;
+Information: Uniquified 16 instances of design 'Router'. (OPT-1056)
+Information: Uniquified 80 instances of design 'buffer'. (OPT-1056)
+Information: Uniquified 16 instances of design 'switch_allocator'. (OPT-1056)
+Information: Uniquified 80 instances of design 'demux_1to5'. (OPT-1056)
+Information: Uniquified 80 instances of design 'one_hot_mux5_1'. (OPT-1056)
+Information: Uniquified 80 instances of design 'round_robin_arbiter'. (OPT-1056)
+Information: Uniquified 80 instances of design 'ram'. (OPT-1056)
+Information: Uniquified 16 instances of design 'route_compute'. (OPT-1056)
+1
+# Linking your design into the cells in standard cell libraries.
+# This command checks whether your design can be compiled
+link ;
+
+  Linking design 'mesh_general'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  * (449 designs)             /home/viterbi/07/ruochenj/EE577B/mesh_wormhole/src/mesh_general.db, etc
+  gscl45nm (library)          /home/scf-22/ee577/NCSU45PDK/FreePDK45/osu_soc/lib/files/gscl45nm.db
+  dw_foundation.sldb (library) /usr/local/synopsys/Design_Compiler/default/libraries/syn/dw_foundation.sldb
+
+1
+# Create a clock with period of 5.
+create_clock -name clk -period 5.0 -waveform [list 0 2.5] [get_ports clk]
+1
+# Setting timing constraints for combinational logic.
+# Specifying maximum delay from inputs to outputs
+set_max_delay 5.0 -to [all_outputs];
+1
+set_max_delay 5.0 -from [all_inputs];
+1
+# "check_design" checks the internal representation of the
+# current design for consistency and issues error and
+# warning messages as appropriate.
+check_design > report/$design_name.check_design ;
+# Perforing synthesis and optimization on the current_design.
+compile ;
+Information: Checking out the license 'DesignWare'. (SEC-104)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | K-2015.06-DWBB_201506.5.2
+                                                               |     *     |
+| Licensed DW Building Blocks        | K-2015.06-DWBB_201506.5.2
+                                                               |     *     |
+============================================================================
+
+
+Information: There are 1594 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'one_hot_mux5_1_0'
+  Processing 'round_robin_arbiter_0'
+  Processing 'demux_1to5_0'
+  Processing 'switch_allocator_0'
+  Processing 'route_compute_0'
+Information: Added key list 'DesignWare' to design 'route_compute_0'. (DDB-72)
+  Processing 'ram_0'
+  Processing 'buffer_0'
+Information: Added key list 'DesignWare' to design 'buffer_0'. (DDB-72)
+  Processing 'Router_0'
+  Processing 'switch_allocator_15'
+  Processing 'Router_15'
+  Processing 'mesh_general'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: Timing loop detected. (OPT-150)
+        GEN_ROW[3].GEN_COL[3].mesh_router_inst/route_compute_inst/U10/A GEN_ROW[3].GEN_COL[3].mesh_router_inst/route_compute_inst/U10/Y 
+Information: Timing loop detected. (OPT-150)
+        GEN_ROW[3].GEN_COL[3].mesh_router_inst/route_compute_inst/U39/B GEN_ROW[3].GEN_COL[3].mesh_router_inst/route_compute_inst/U39/Y GEN_ROW[3].GEN_COL[3].mesh_router_inst/route_compute_inst/U9/A GEN_ROW[3].GEN_COL[3].mesh_router_inst/route_compute_inst/U9/Y 
+Warning: Disabling timing arc between pins 'A' and 'Y' on cell 'GEN_ROW[3].GEN_COL[3].mesh_router_inst/route_compute_inst/U10'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[3].GEN_COL[3].mesh_router_inst/route_compute_inst/U39'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[3].GEN_COL[3].mesh_router_inst/route_compute_inst/U41'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A' and 'Y' on cell 'GEN_ROW[3].GEN_COL[3].mesh_router_inst/route_compute_inst/U7'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[3].GEN_COL[3].mesh_router_inst/route_compute_inst/U31'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[3].GEN_COL[3].mesh_router_inst/route_compute_inst/U33'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A' and 'Y' on cell 'GEN_ROW[3].GEN_COL[3].mesh_router_inst/route_compute_inst/U4'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[3].GEN_COL[3].mesh_router_inst/route_compute_inst/U23'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[3].GEN_COL[3].mesh_router_inst/route_compute_inst/U25'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A' and 'Y' on cell 'GEN_ROW[3].GEN_COL[3].mesh_router_inst/route_compute_inst/U13'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[3].GEN_COL[3].mesh_router_inst/route_compute_inst/U47'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[3].GEN_COL[3].mesh_router_inst/route_compute_inst/U49'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A' and 'Y' on cell 'GEN_ROW[3].GEN_COL[3].mesh_router_inst/route_compute_inst/U16'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[3].GEN_COL[3].mesh_router_inst/route_compute_inst/U55'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[3].GEN_COL[3].mesh_router_inst/route_compute_inst/U57'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A' and 'Y' on cell 'GEN_ROW[3].GEN_COL[2].mesh_router_inst/route_compute_inst/U10'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[3].GEN_COL[2].mesh_router_inst/route_compute_inst/U39'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[3].GEN_COL[2].mesh_router_inst/route_compute_inst/U41'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A' and 'Y' on cell 'GEN_ROW[3].GEN_COL[2].mesh_router_inst/route_compute_inst/U7'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[3].GEN_COL[2].mesh_router_inst/route_compute_inst/U31'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[3].GEN_COL[2].mesh_router_inst/route_compute_inst/U33'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A' and 'Y' on cell 'GEN_ROW[3].GEN_COL[2].mesh_router_inst/route_compute_inst/U4'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[3].GEN_COL[2].mesh_router_inst/route_compute_inst/U23'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[3].GEN_COL[2].mesh_router_inst/route_compute_inst/U25'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A' and 'Y' on cell 'GEN_ROW[3].GEN_COL[2].mesh_router_inst/route_compute_inst/U13'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[3].GEN_COL[2].mesh_router_inst/route_compute_inst/U47'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[3].GEN_COL[2].mesh_router_inst/route_compute_inst/U49'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A' and 'Y' on cell 'GEN_ROW[3].GEN_COL[2].mesh_router_inst/route_compute_inst/U16'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[3].GEN_COL[2].mesh_router_inst/route_compute_inst/U55'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[3].GEN_COL[2].mesh_router_inst/route_compute_inst/U57'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A' and 'Y' on cell 'GEN_ROW[3].GEN_COL[1].mesh_router_inst/route_compute_inst/U10'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[3].GEN_COL[1].mesh_router_inst/route_compute_inst/U39'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[3].GEN_COL[1].mesh_router_inst/route_compute_inst/U41'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A' and 'Y' on cell 'GEN_ROW[3].GEN_COL[1].mesh_router_inst/route_compute_inst/U7'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[3].GEN_COL[1].mesh_router_inst/route_compute_inst/U31'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[3].GEN_COL[1].mesh_router_inst/route_compute_inst/U33'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A' and 'Y' on cell 'GEN_ROW[3].GEN_COL[1].mesh_router_inst/route_compute_inst/U4'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[3].GEN_COL[1].mesh_router_inst/route_compute_inst/U23'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[3].GEN_COL[1].mesh_router_inst/route_compute_inst/U25'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A' and 'Y' on cell 'GEN_ROW[3].GEN_COL[1].mesh_router_inst/route_compute_inst/U13'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[3].GEN_COL[1].mesh_router_inst/route_compute_inst/U47'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[3].GEN_COL[1].mesh_router_inst/route_compute_inst/U49'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A' and 'Y' on cell 'GEN_ROW[3].GEN_COL[1].mesh_router_inst/route_compute_inst/U16'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[3].GEN_COL[1].mesh_router_inst/route_compute_inst/U55'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[3].GEN_COL[1].mesh_router_inst/route_compute_inst/U57'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A' and 'Y' on cell 'GEN_ROW[3].GEN_COL[0].mesh_router_inst/route_compute_inst/U10'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[3].GEN_COL[0].mesh_router_inst/route_compute_inst/U39'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[3].GEN_COL[0].mesh_router_inst/route_compute_inst/U41'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A' and 'Y' on cell 'GEN_ROW[3].GEN_COL[0].mesh_router_inst/route_compute_inst/U7'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[3].GEN_COL[0].mesh_router_inst/route_compute_inst/U31'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[3].GEN_COL[0].mesh_router_inst/route_compute_inst/U33'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A' and 'Y' on cell 'GEN_ROW[3].GEN_COL[0].mesh_router_inst/route_compute_inst/U4'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[3].GEN_COL[0].mesh_router_inst/route_compute_inst/U23'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[3].GEN_COL[0].mesh_router_inst/route_compute_inst/U25'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A' and 'Y' on cell 'GEN_ROW[3].GEN_COL[0].mesh_router_inst/route_compute_inst/U13'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[3].GEN_COL[0].mesh_router_inst/route_compute_inst/U47'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[3].GEN_COL[0].mesh_router_inst/route_compute_inst/U49'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A' and 'Y' on cell 'GEN_ROW[3].GEN_COL[0].mesh_router_inst/route_compute_inst/U16'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[3].GEN_COL[0].mesh_router_inst/route_compute_inst/U55'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[3].GEN_COL[0].mesh_router_inst/route_compute_inst/U57'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A' and 'Y' on cell 'GEN_ROW[2].GEN_COL[3].mesh_router_inst/route_compute_inst/U10'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[2].GEN_COL[3].mesh_router_inst/route_compute_inst/U39'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[2].GEN_COL[3].mesh_router_inst/route_compute_inst/U41'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A' and 'Y' on cell 'GEN_ROW[2].GEN_COL[3].mesh_router_inst/route_compute_inst/U7'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[2].GEN_COL[3].mesh_router_inst/route_compute_inst/U31'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[2].GEN_COL[3].mesh_router_inst/route_compute_inst/U33'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A' and 'Y' on cell 'GEN_ROW[2].GEN_COL[3].mesh_router_inst/route_compute_inst/U4'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[2].GEN_COL[3].mesh_router_inst/route_compute_inst/U23'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[2].GEN_COL[3].mesh_router_inst/route_compute_inst/U25'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A' and 'Y' on cell 'GEN_ROW[2].GEN_COL[3].mesh_router_inst/route_compute_inst/U13'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[2].GEN_COL[3].mesh_router_inst/route_compute_inst/U47'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[2].GEN_COL[3].mesh_router_inst/route_compute_inst/U49'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A' and 'Y' on cell 'GEN_ROW[2].GEN_COL[3].mesh_router_inst/route_compute_inst/U16'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[2].GEN_COL[3].mesh_router_inst/route_compute_inst/U55'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[2].GEN_COL[3].mesh_router_inst/route_compute_inst/U57'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A' and 'Y' on cell 'GEN_ROW[2].GEN_COL[2].mesh_router_inst/route_compute_inst/U10'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[2].GEN_COL[2].mesh_router_inst/route_compute_inst/U39'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[2].GEN_COL[2].mesh_router_inst/route_compute_inst/U41'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A' and 'Y' on cell 'GEN_ROW[2].GEN_COL[2].mesh_router_inst/route_compute_inst/U7'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[2].GEN_COL[2].mesh_router_inst/route_compute_inst/U31'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[2].GEN_COL[2].mesh_router_inst/route_compute_inst/U33'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A' and 'Y' on cell 'GEN_ROW[2].GEN_COL[2].mesh_router_inst/route_compute_inst/U4'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[2].GEN_COL[2].mesh_router_inst/route_compute_inst/U23'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[2].GEN_COL[2].mesh_router_inst/route_compute_inst/U25'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A' and 'Y' on cell 'GEN_ROW[2].GEN_COL[2].mesh_router_inst/route_compute_inst/U13'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[2].GEN_COL[2].mesh_router_inst/route_compute_inst/U47'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[2].GEN_COL[2].mesh_router_inst/route_compute_inst/U49'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A' and 'Y' on cell 'GEN_ROW[2].GEN_COL[2].mesh_router_inst/route_compute_inst/U16'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[2].GEN_COL[2].mesh_router_inst/route_compute_inst/U55'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[2].GEN_COL[2].mesh_router_inst/route_compute_inst/U57'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A' and 'Y' on cell 'GEN_ROW[2].GEN_COL[1].mesh_router_inst/route_compute_inst/U10'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[2].GEN_COL[1].mesh_router_inst/route_compute_inst/U39'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[2].GEN_COL[1].mesh_router_inst/route_compute_inst/U41'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A' and 'Y' on cell 'GEN_ROW[2].GEN_COL[1].mesh_router_inst/route_compute_inst/U7'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[2].GEN_COL[1].mesh_router_inst/route_compute_inst/U31'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[2].GEN_COL[1].mesh_router_inst/route_compute_inst/U33'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A' and 'Y' on cell 'GEN_ROW[2].GEN_COL[1].mesh_router_inst/route_compute_inst/U4'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[2].GEN_COL[1].mesh_router_inst/route_compute_inst/U23'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[2].GEN_COL[1].mesh_router_inst/route_compute_inst/U25'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A' and 'Y' on cell 'GEN_ROW[2].GEN_COL[1].mesh_router_inst/route_compute_inst/U13'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[2].GEN_COL[1].mesh_router_inst/route_compute_inst/U47'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[2].GEN_COL[1].mesh_router_inst/route_compute_inst/U49'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A' and 'Y' on cell 'GEN_ROW[2].GEN_COL[1].mesh_router_inst/route_compute_inst/U16'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[2].GEN_COL[1].mesh_router_inst/route_compute_inst/U55'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[2].GEN_COL[1].mesh_router_inst/route_compute_inst/U57'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A' and 'Y' on cell 'GEN_ROW[2].GEN_COL[0].mesh_router_inst/route_compute_inst/U10'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[2].GEN_COL[0].mesh_router_inst/route_compute_inst/U39'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[2].GEN_COL[0].mesh_router_inst/route_compute_inst/U41'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A' and 'Y' on cell 'GEN_ROW[2].GEN_COL[0].mesh_router_inst/route_compute_inst/U7'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[2].GEN_COL[0].mesh_router_inst/route_compute_inst/U31'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[2].GEN_COL[0].mesh_router_inst/route_compute_inst/U33'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A' and 'Y' on cell 'GEN_ROW[2].GEN_COL[0].mesh_router_inst/route_compute_inst/U4'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[2].GEN_COL[0].mesh_router_inst/route_compute_inst/U23'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[2].GEN_COL[0].mesh_router_inst/route_compute_inst/U25'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A' and 'Y' on cell 'GEN_ROW[2].GEN_COL[0].mesh_router_inst/route_compute_inst/U13'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[2].GEN_COL[0].mesh_router_inst/route_compute_inst/U47'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[2].GEN_COL[0].mesh_router_inst/route_compute_inst/U49'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A' and 'Y' on cell 'GEN_ROW[2].GEN_COL[0].mesh_router_inst/route_compute_inst/U16'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[2].GEN_COL[0].mesh_router_inst/route_compute_inst/U55'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[2].GEN_COL[0].mesh_router_inst/route_compute_inst/U57'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A' and 'Y' on cell 'GEN_ROW[1].GEN_COL[3].mesh_router_inst/route_compute_inst/U10'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[1].GEN_COL[3].mesh_router_inst/route_compute_inst/U39'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[1].GEN_COL[3].mesh_router_inst/route_compute_inst/U41'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A' and 'Y' on cell 'GEN_ROW[1].GEN_COL[3].mesh_router_inst/route_compute_inst/U7'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[1].GEN_COL[3].mesh_router_inst/route_compute_inst/U31'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[1].GEN_COL[3].mesh_router_inst/route_compute_inst/U33'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A' and 'Y' on cell 'GEN_ROW[1].GEN_COL[3].mesh_router_inst/route_compute_inst/U4'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[1].GEN_COL[3].mesh_router_inst/route_compute_inst/U23'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[1].GEN_COL[3].mesh_router_inst/route_compute_inst/U25'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A' and 'Y' on cell 'GEN_ROW[1].GEN_COL[3].mesh_router_inst/route_compute_inst/U13'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[1].GEN_COL[3].mesh_router_inst/route_compute_inst/U47'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[1].GEN_COL[3].mesh_router_inst/route_compute_inst/U49'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A' and 'Y' on cell 'GEN_ROW[1].GEN_COL[3].mesh_router_inst/route_compute_inst/U16'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[1].GEN_COL[3].mesh_router_inst/route_compute_inst/U55'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[1].GEN_COL[3].mesh_router_inst/route_compute_inst/U57'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A' and 'Y' on cell 'GEN_ROW[1].GEN_COL[2].mesh_router_inst/route_compute_inst/U10'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[1].GEN_COL[2].mesh_router_inst/route_compute_inst/U39'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[1].GEN_COL[2].mesh_router_inst/route_compute_inst/U41'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A' and 'Y' on cell 'GEN_ROW[1].GEN_COL[2].mesh_router_inst/route_compute_inst/U7'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[1].GEN_COL[2].mesh_router_inst/route_compute_inst/U31'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[1].GEN_COL[2].mesh_router_inst/route_compute_inst/U33'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A' and 'Y' on cell 'GEN_ROW[1].GEN_COL[2].mesh_router_inst/route_compute_inst/U4'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[1].GEN_COL[2].mesh_router_inst/route_compute_inst/U23'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[1].GEN_COL[2].mesh_router_inst/route_compute_inst/U25'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A' and 'Y' on cell 'GEN_ROW[1].GEN_COL[2].mesh_router_inst/route_compute_inst/U13'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[1].GEN_COL[2].mesh_router_inst/route_compute_inst/U47'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[1].GEN_COL[2].mesh_router_inst/route_compute_inst/U49'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A' and 'Y' on cell 'GEN_ROW[1].GEN_COL[2].mesh_router_inst/route_compute_inst/U16'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[1].GEN_COL[2].mesh_router_inst/route_compute_inst/U55'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[1].GEN_COL[2].mesh_router_inst/route_compute_inst/U57'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A' and 'Y' on cell 'GEN_ROW[1].GEN_COL[1].mesh_router_inst/route_compute_inst/U10'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[1].GEN_COL[1].mesh_router_inst/route_compute_inst/U39'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[1].GEN_COL[1].mesh_router_inst/route_compute_inst/U41'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A' and 'Y' on cell 'GEN_ROW[1].GEN_COL[1].mesh_router_inst/route_compute_inst/U7'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[1].GEN_COL[1].mesh_router_inst/route_compute_inst/U31'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[1].GEN_COL[1].mesh_router_inst/route_compute_inst/U33'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A' and 'Y' on cell 'GEN_ROW[1].GEN_COL[1].mesh_router_inst/route_compute_inst/U4'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[1].GEN_COL[1].mesh_router_inst/route_compute_inst/U23'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[1].GEN_COL[1].mesh_router_inst/route_compute_inst/U25'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A' and 'Y' on cell 'GEN_ROW[1].GEN_COL[1].mesh_router_inst/route_compute_inst/U13'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[1].GEN_COL[1].mesh_router_inst/route_compute_inst/U47'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[1].GEN_COL[1].mesh_router_inst/route_compute_inst/U49'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A' and 'Y' on cell 'GEN_ROW[1].GEN_COL[1].mesh_router_inst/route_compute_inst/U16'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[1].GEN_COL[1].mesh_router_inst/route_compute_inst/U55'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[1].GEN_COL[1].mesh_router_inst/route_compute_inst/U57'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A' and 'Y' on cell 'GEN_ROW[1].GEN_COL[0].mesh_router_inst/route_compute_inst/U10'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[1].GEN_COL[0].mesh_router_inst/route_compute_inst/U39'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[1].GEN_COL[0].mesh_router_inst/route_compute_inst/U41'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A' and 'Y' on cell 'GEN_ROW[1].GEN_COL[0].mesh_router_inst/route_compute_inst/U7'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[1].GEN_COL[0].mesh_router_inst/route_compute_inst/U31'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[1].GEN_COL[0].mesh_router_inst/route_compute_inst/U33'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A' and 'Y' on cell 'GEN_ROW[1].GEN_COL[0].mesh_router_inst/route_compute_inst/U4'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[1].GEN_COL[0].mesh_router_inst/route_compute_inst/U23'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[1].GEN_COL[0].mesh_router_inst/route_compute_inst/U25'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A' and 'Y' on cell 'GEN_ROW[1].GEN_COL[0].mesh_router_inst/route_compute_inst/U13'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[1].GEN_COL[0].mesh_router_inst/route_compute_inst/U47'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[1].GEN_COL[0].mesh_router_inst/route_compute_inst/U49'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A' and 'Y' on cell 'GEN_ROW[1].GEN_COL[0].mesh_router_inst/route_compute_inst/U16'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[1].GEN_COL[0].mesh_router_inst/route_compute_inst/U55'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[1].GEN_COL[0].mesh_router_inst/route_compute_inst/U57'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A' and 'Y' on cell 'GEN_ROW[0].GEN_COL[3].mesh_router_inst/route_compute_inst/U10'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[0].GEN_COL[3].mesh_router_inst/route_compute_inst/U39'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[0].GEN_COL[3].mesh_router_inst/route_compute_inst/U41'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A' and 'Y' on cell 'GEN_ROW[0].GEN_COL[3].mesh_router_inst/route_compute_inst/U7'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[0].GEN_COL[3].mesh_router_inst/route_compute_inst/U31'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[0].GEN_COL[3].mesh_router_inst/route_compute_inst/U33'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A' and 'Y' on cell 'GEN_ROW[0].GEN_COL[3].mesh_router_inst/route_compute_inst/U4'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[0].GEN_COL[3].mesh_router_inst/route_compute_inst/U23'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[0].GEN_COL[3].mesh_router_inst/route_compute_inst/U25'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A' and 'Y' on cell 'GEN_ROW[0].GEN_COL[3].mesh_router_inst/route_compute_inst/U13'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[0].GEN_COL[3].mesh_router_inst/route_compute_inst/U47'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[0].GEN_COL[3].mesh_router_inst/route_compute_inst/U49'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A' and 'Y' on cell 'GEN_ROW[0].GEN_COL[3].mesh_router_inst/route_compute_inst/U16'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[0].GEN_COL[3].mesh_router_inst/route_compute_inst/U55'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[0].GEN_COL[3].mesh_router_inst/route_compute_inst/U57'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A' and 'Y' on cell 'GEN_ROW[0].GEN_COL[2].mesh_router_inst/route_compute_inst/U10'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[0].GEN_COL[2].mesh_router_inst/route_compute_inst/U39'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[0].GEN_COL[2].mesh_router_inst/route_compute_inst/U41'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A' and 'Y' on cell 'GEN_ROW[0].GEN_COL[2].mesh_router_inst/route_compute_inst/U7'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[0].GEN_COL[2].mesh_router_inst/route_compute_inst/U31'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[0].GEN_COL[2].mesh_router_inst/route_compute_inst/U33'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A' and 'Y' on cell 'GEN_ROW[0].GEN_COL[2].mesh_router_inst/route_compute_inst/U4'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[0].GEN_COL[2].mesh_router_inst/route_compute_inst/U23'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[0].GEN_COL[2].mesh_router_inst/route_compute_inst/U25'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A' and 'Y' on cell 'GEN_ROW[0].GEN_COL[2].mesh_router_inst/route_compute_inst/U13'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[0].GEN_COL[2].mesh_router_inst/route_compute_inst/U47'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[0].GEN_COL[2].mesh_router_inst/route_compute_inst/U49'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A' and 'Y' on cell 'GEN_ROW[0].GEN_COL[2].mesh_router_inst/route_compute_inst/U16'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[0].GEN_COL[2].mesh_router_inst/route_compute_inst/U55'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[0].GEN_COL[2].mesh_router_inst/route_compute_inst/U57'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A' and 'Y' on cell 'GEN_ROW[0].GEN_COL[1].mesh_router_inst/route_compute_inst/U10'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[0].GEN_COL[1].mesh_router_inst/route_compute_inst/U39'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[0].GEN_COL[1].mesh_router_inst/route_compute_inst/U41'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A' and 'Y' on cell 'GEN_ROW[0].GEN_COL[1].mesh_router_inst/route_compute_inst/U7'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[0].GEN_COL[1].mesh_router_inst/route_compute_inst/U31'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[0].GEN_COL[1].mesh_router_inst/route_compute_inst/U33'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A' and 'Y' on cell 'GEN_ROW[0].GEN_COL[1].mesh_router_inst/route_compute_inst/U4'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[0].GEN_COL[1].mesh_router_inst/route_compute_inst/U23'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[0].GEN_COL[1].mesh_router_inst/route_compute_inst/U25'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A' and 'Y' on cell 'GEN_ROW[0].GEN_COL[1].mesh_router_inst/route_compute_inst/U13'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[0].GEN_COL[1].mesh_router_inst/route_compute_inst/U47'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[0].GEN_COL[1].mesh_router_inst/route_compute_inst/U49'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A' and 'Y' on cell 'GEN_ROW[0].GEN_COL[1].mesh_router_inst/route_compute_inst/U16'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[0].GEN_COL[1].mesh_router_inst/route_compute_inst/U55'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[0].GEN_COL[1].mesh_router_inst/route_compute_inst/U57'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A' and 'Y' on cell 'GEN_ROW[0].GEN_COL[0].mesh_router_inst/route_compute_inst/U10'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[0].GEN_COL[0].mesh_router_inst/route_compute_inst/U39'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[0].GEN_COL[0].mesh_router_inst/route_compute_inst/U41'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A' and 'Y' on cell 'GEN_ROW[0].GEN_COL[0].mesh_router_inst/route_compute_inst/U7'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[0].GEN_COL[0].mesh_router_inst/route_compute_inst/U31'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[0].GEN_COL[0].mesh_router_inst/route_compute_inst/U33'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A' and 'Y' on cell 'GEN_ROW[0].GEN_COL[0].mesh_router_inst/route_compute_inst/U4'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[0].GEN_COL[0].mesh_router_inst/route_compute_inst/U23'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[0].GEN_COL[0].mesh_router_inst/route_compute_inst/U25'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A' and 'Y' on cell 'GEN_ROW[0].GEN_COL[0].mesh_router_inst/route_compute_inst/U13'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[0].GEN_COL[0].mesh_router_inst/route_compute_inst/U47'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[0].GEN_COL[0].mesh_router_inst/route_compute_inst/U49'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A' and 'Y' on cell 'GEN_ROW[0].GEN_COL[0].mesh_router_inst/route_compute_inst/U16'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[0].GEN_COL[0].mesh_router_inst/route_compute_inst/U55'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GEN_ROW[0].GEN_COL[0].mesh_router_inst/route_compute_inst/U57'
+         to break a timing loop. (OPT-314)
+
+  Beginning Implementation Selection
+  ----------------------------------
+
+  Beginning Mapping Optimizations  (Medium effort)
+  -------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:10  101301.2      0.00       0.0      91.3                          
+    0:00:10  101301.2      0.00       0.0      91.3                          
+    0:00:13  103815.7      0.00       0.0      79.4                          
+    0:00:14  103815.7      0.00       0.0      79.4                          
+    0:00:14  103815.7      0.00       0.0      79.4                          
+    0:00:14  103815.7      0.00       0.0      79.4                          
+    0:00:14  103815.7      0.00       0.0      79.4                          
+    0:00:18   99605.2      0.00       0.0      73.8                          
+    0:00:18   99605.2      0.00       0.0      73.8                          
+    0:00:18   99605.2      0.00       0.0      73.8                          
+    0:00:18   99605.2      0.00       0.0      73.8                          
+    0:00:18   99605.2      0.00       0.0      73.8                          
+    0:00:27  101259.9      0.00       0.0      67.1                          
+    0:00:36  102664.1      0.00       0.0      61.8                          
+    0:00:44  104470.9      0.00       0.0      57.8                          
+    0:00:54  106216.7      0.00       0.0      55.5                          
+    0:01:02  107252.9      0.00       0.0      54.3                          
+    0:01:08  107975.6      0.00       0.0      53.6                          
+    0:01:10  108564.1      0.00       0.0      53.0                          
+    0:01:11  109164.8      0.00       0.0      52.3                          
+    0:01:12  109262.4      0.00       0.0      52.2                          
+    0:01:12  109311.2      0.00       0.0      52.2                          
+    0:01:12  109311.2      0.00       0.0      52.2                          
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:01:12  109311.2      0.00       0.0      52.2                          
+    0:01:12  109311.2      0.00       0.0      52.2                          
+    0:01:13  109256.8      0.00       0.0      52.2                          
+
+
+  Beginning Design Rule Fixing  (max_capacitance)
+  ----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:01:13  109256.8      0.00       0.0      52.2                          
+    0:01:13  109622.8      0.00       0.0      51.3 GEN_ROW[3].GEN_COL[1].mesh_router_inst/switch_allocator_inst/west_arbiter/grant[4]
+    0:01:13  109988.9      0.00       0.0      50.5 GEN_ROW[2].GEN_COL[3].mesh_router_inst/switch_allocator_inst/south_arbiter/grant[3]
+    0:01:13  110355.0      0.00       0.0      49.6 GEN_ROW[2].GEN_COL[1].mesh_router_inst/switch_allocator_inst/north_arbiter/grant[3]
+    0:01:14  110721.0      0.00       0.0      48.8 GEN_ROW[0].GEN_COL[2].mesh_router_inst/switch_allocator_inst/west_arbiter/grant[1]
+    0:01:14  111087.1      0.00       0.0      48.0 GEN_ROW[3].GEN_COL[0].mesh_router_inst/switch_allocator_inst/west_arbiter/grant[1]
+    0:01:14  111430.1      0.00       0.0      47.1 GEN_ROW[1].GEN_COL[0].mesh_router_inst/switch_allocator_inst/south_arbiter/grant[0]
+    0:01:14  111755.3      0.00       0.0      46.2 GEN_ROW[2].GEN_COL[2].mesh_router_inst/switch_allocator_inst/local_arbiter/grant[3]
+    0:01:14  112021.9      0.00       0.0      45.2 GEN_ROW[2].GEN_COL[3].mesh_router_inst/switch_allocator_inst/north_arbiter/grant[0]
+    0:01:14  112420.8      0.00       0.0      44.5 GEN_ROW[2].GEN_COL[1].mesh_router_inst/switch_allocator_inst/west_arbiter/grant[2]
+    0:01:14  112826.3      0.00       0.0      43.9 GEN_ROW[0].GEN_COL[3].mesh_router_inst/switch_allocator_inst/east_arbiter/grant[1]
+    0:01:15  113167.5      0.00       0.0      43.1 GEN_ROW[0].GEN_COL[3].mesh_router_inst/switch_allocator_inst/east_arbiter/grant[0]
+    0:01:15  113471.1      0.00       0.0      42.2 GEN_ROW[1].GEN_COL[1].mesh_router_inst/switch_allocator_inst/local_arbiter/grant[2]
+    0:01:15  113824.0      0.00       0.0      41.5 GEN_ROW[2].GEN_COL[3].mesh_router_inst/buf1/dut/data_out[1]
+    0:01:15  114040.8      0.00       0.0      40.5 GEN_ROW[0].GEN_COL[2].mesh_router_inst/buf3/dut/data_out[1]
+    0:01:15  114257.7      0.00       0.0      39.4 GEN_ROW[1].GEN_COL[3].mesh_router_inst/buf3/dut/data_out[0]
+    0:01:16  114474.5      0.00       0.0      38.4 GEN_ROW[2].GEN_COL[1].mesh_router_inst/buf2/dut/data_out[0]
+    0:01:16  114629.3      0.00       0.0      37.8 GEN_ROW[1].GEN_COL[3].mesh_router_inst/switch_allocator_inst/wr_en_west
+    0:01:16  114773.9      0.00       0.0      37.3 GEN_ROW[3].GEN_COL[2].mesh_router_inst/switch_allocator_inst/wr_en_east
+    0:01:16  114985.5      0.00       0.0      36.6 GEN_ROW[1].GEN_COL[1].mesh_router_inst/buf4/dut/data_out[6]
+    0:01:16  115202.4      0.00       0.0      35.8 GEN_ROW[0].GEN_COL[0].mesh_router_inst/buf1/dut/data_out[7]
+    0:01:16  115419.2      0.00       0.0      35.0 GEN_ROW[1].GEN_COL[1].mesh_router_inst/buf1/dut/data_out[4]
+    0:01:16  115636.0      0.00       0.0      34.3 GEN_ROW[1].GEN_COL[1].mesh_router_inst/buf1/dut/data_out[5]
+    0:01:16  115852.8      0.00       0.0      33.5 GEN_ROW[3].GEN_COL[3].mesh_router_inst/buf4/dut/data_out[5]
+    0:01:17  116069.6      0.00       0.0      32.8 GEN_ROW[2].GEN_COL[2].mesh_router_inst/buf0/dut/data_out[6]
+    0:01:17  116286.4      0.00       0.0      32.0 GEN_ROW[2].GEN_COL[1].mesh_router_inst/buf0/dut/data_out[4]
+    0:01:17  116503.3      0.00       0.0      31.3 GEN_ROW[1].GEN_COL[3].mesh_router_inst/buf0/dut/data_out[5]
+    0:01:17  116720.1      0.00       0.0      30.6 GEN_ROW[0].GEN_COL[3].mesh_router_inst/buf0/dut/data_out[7]
+    0:01:17  116936.9      0.00       0.0      29.9 GEN_ROW[2].GEN_COL[0].mesh_router_inst/buf2/dut/data_out[6]
+    0:01:17  117153.7      0.00       0.0      29.3 GEN_ROW[1].GEN_COL[1].mesh_router_inst/buf2/dut/data_out[5]
+    0:01:17  117358.8      0.00       0.0      28.7 GEN_ROW[0].GEN_COL[0].mesh_router_inst/buf2/n28
+    0:01:17  117452.6      0.00       0.0      28.6 GEN_ROW[1].GEN_COL[0].mesh_router_inst/buf2/n28
+    0:01:17  117546.5      0.00       0.0      28.4 GEN_ROW[2].GEN_COL[0].mesh_router_inst/buf2/n28
+    0:01:17  117640.4      0.00       0.0      28.2 GEN_ROW[3].GEN_COL[0].mesh_router_inst/buf2/n28
+    0:01:17  117740.8      0.00       0.0      28.0 GEN_ROW[0].GEN_COL[0].mesh_router_inst/switch_allocator_inst/west_arbiter/n85
+    0:01:18  117854.4      0.00       0.0      27.9 GEN_ROW[1].GEN_COL[1].mesh_router_inst/switch_allocator_inst/north_arbiter/n85
+    0:01:18  117967.9      0.00       0.0      27.8 GEN_ROW[2].GEN_COL[1].mesh_router_inst/switch_allocator_inst/south_arbiter/n85
+    0:01:18  118081.5      0.00       0.0      27.6 GEN_ROW[3].GEN_COL[1].mesh_router_inst/switch_allocator_inst/local_arbiter/n85
+    0:01:18  118210.6      0.00       0.0      27.5 GEN_ROW[0].GEN_COL[2].mesh_router_inst/switch_allocator_inst/local_arbiter/n69
+    0:01:18  118349.9      0.00       0.0      27.3 GEN_ROW[2].GEN_COL[0].mesh_router_inst/switch_allocator_inst/east_arbiter/n69
+    0:01:18  118489.3      0.00       0.0      27.1 GEN_ROW[3].GEN_COL[1].mesh_router_inst/switch_allocator_inst/west_arbiter/n69
+    0:01:18  118735.2      0.00       0.0      27.0 GEN_ROW[0].GEN_COL[2].mesh_router_inst/switch_allocator_inst/south_arbiter/n150
+    0:01:18  119055.3      0.00       0.0      26.8 GEN_ROW[1].GEN_COL[2].mesh_router_inst/switch_allocator_inst/local_arbiter/n150
+    0:01:18  119375.4      0.00       0.0      26.7 GEN_ROW[2].GEN_COL[3].mesh_router_inst/switch_allocator_inst/east_arbiter/n150
+    0:01:18  119695.4      0.00       0.0      26.6 GEN_ROW[3].GEN_COL[3].mesh_router_inst/switch_allocator_inst/west_arbiter/n150
+    0:01:18  119822.6      0.00       0.0      26.5 GEN_ROW[1].GEN_COL[0].mesh_router_inst/switch_allocator_inst/west_arbiter/n81
+    0:01:18  119939.9      0.00       0.0      26.3 GEN_ROW[2].GEN_COL[1].mesh_router_inst/switch_allocator_inst/west_arbiter/n81
+    0:01:18  120057.3      0.00       0.0      26.1 GEN_ROW[3].GEN_COL[2].mesh_router_inst/switch_allocator_inst/west_arbiter/n81
+    0:01:19  120168.0      0.00       0.0      26.0 GEN_ROW[0].GEN_COL[3].mesh_router_inst/switch_allocator_inst/north_arbiter/n134
+    0:01:19  120276.4      0.00       0.0      25.9 GEN_ROW[1].GEN_COL[3].mesh_router_inst/switch_allocator_inst/east_arbiter/n134
+    0:01:19  120384.8      0.00       0.0      25.9 GEN_ROW[2].GEN_COL[3].mesh_router_inst/switch_allocator_inst/south_arbiter/n134
+    0:01:19  120493.2      0.00       0.0      25.8 GEN_ROW[3].GEN_COL[3].mesh_router_inst/switch_allocator_inst/west_arbiter/n134
+    0:01:19  120639.2      0.00       0.0      25.6 GEN_ROW[1].GEN_COL[1].mesh_router_inst/switch_allocator_inst/local_arbiter/n147
+    0:01:19  120789.4      0.00       0.0      25.4 GEN_ROW[3].GEN_COL[0].mesh_router_inst/switch_allocator_inst/east_arbiter/n147
+    0:01:19  120930.6      0.00       0.0      25.3 GEN_ROW[0].GEN_COL[2].mesh_router_inst/switch_allocator_inst/north_arbiter/n122
+    0:01:19  121054.5      0.00       0.0      25.2 GEN_ROW[1].GEN_COL[2].mesh_router_inst/switch_allocator_inst/local_arbiter/n122
+    0:01:19  121178.4      0.00       0.0      25.1 GEN_ROW[2].GEN_COL[3].mesh_router_inst/switch_allocator_inst/west_arbiter/n122
+    0:01:19  121302.3      0.00       0.0      25.0 GEN_ROW[0].GEN_COL[0].mesh_router_inst/switch_allocator_inst/south_arbiter/n101
+    0:01:19  121415.9      0.00       0.0      25.0 GEN_ROW[1].GEN_COL[0].mesh_router_inst/switch_allocator_inst/local_arbiter/n101
+    0:01:19  121529.5      0.00       0.0      24.9 GEN_ROW[2].GEN_COL[1].mesh_router_inst/switch_allocator_inst/east_arbiter/n101
+    0:01:19  121643.0      0.00       0.0      24.8 GEN_ROW[3].GEN_COL[1].mesh_router_inst/switch_allocator_inst/west_arbiter/n101
+    0:01:20  121761.8      0.00       0.0      24.8 GEN_ROW[0].GEN_COL[2].mesh_router_inst/switch_allocator_inst/east_arbiter/n128
+    0:01:20  121880.5      0.00       0.0      24.7 GEN_ROW[1].GEN_COL[2].mesh_router_inst/switch_allocator_inst/local_arbiter/n128
+    0:01:20  121999.2      0.00       0.0      24.6 GEN_ROW[2].GEN_COL[3].mesh_router_inst/switch_allocator_inst/south_arbiter/n128
+    0:01:20  122123.1      0.00       0.0      24.5 GEN_ROW[0].GEN_COL[0].mesh_router_inst/switch_allocator_inst/east_arbiter/n66
+    0:01:20  122298.6      0.00       0.0      24.4 GEN_ROW[1].GEN_COL[3].mesh_router_inst/switch_allocator_inst/north_arbiter/n66
+    0:01:20  122474.2      0.00       0.0      24.2 GEN_ROW[3].GEN_COL[1].mesh_router_inst/switch_allocator_inst/local_arbiter/n66
+    0:01:20  122629.0      0.00       0.0      24.1 GEN_ROW[1].GEN_COL[0].mesh_router_inst/switch_allocator_inst/east_arbiter/n146
+    0:01:20  122779.2      0.00       0.0      23.9 GEN_ROW[2].GEN_COL[2].mesh_router_inst/switch_allocator_inst/west_arbiter/n146
+    0:01:20  122921.9      0.00       0.0      23.8 GEN_ROW[0].GEN_COL[0].mesh_router_inst/switch_allocator_inst/west_arbiter/n156
+    0:01:20  123040.6      0.00       0.0      23.7 GEN_ROW[1].GEN_COL[1].mesh_router_inst/switch_allocator_inst/east_arbiter/n156
+    0:01:20  123159.3      0.00       0.0      23.7 GEN_ROW[2].GEN_COL[1].mesh_router_inst/switch_allocator_inst/local_arbiter/n156
+    0:01:20  123278.1      0.00       0.0      23.6 GEN_ROW[3].GEN_COL[2].mesh_router_inst/switch_allocator_inst/south_arbiter/n156
+    0:01:20  123431.5      0.00       0.0      23.5 GEN_ROW[2].GEN_COL[0].mesh_router_inst/switch_allocator_inst/east_arbiter/n123
+    0:01:21  123595.8      0.00       0.0      23.4 GEN_ROW[0].GEN_COL[2].mesh_router_inst/switch_allocator_inst/east_arbiter/n135
+    0:01:21  123755.3      0.00       0.0      23.3 GEN_ROW[2].GEN_COL[1].mesh_router_inst/switch_allocator_inst/north_arbiter/n135
+    0:01:21  123914.9      0.00       0.0      23.2 GEN_ROW[3].GEN_COL[3].mesh_router_inst/switch_allocator_inst/local_arbiter/n135
+    0:01:21  124083.9      0.00       0.0      23.0 GEN_ROW[0].GEN_COL[3].mesh_router_inst/switch_allocator_inst/south_arbiter/n141
+    0:01:21  124252.8      0.00       0.0      22.9 GEN_ROW[1].GEN_COL[3].mesh_router_inst/switch_allocator_inst/north_arbiter/n141
+    0:01:21  124421.8      0.00       0.0      22.8 GEN_ROW[2].GEN_COL[2].mesh_router_inst/switch_allocator_inst/west_arbiter/n141
+    0:01:21  124590.7      0.00       0.0      22.7 GEN_ROW[3].GEN_COL[2].mesh_router_inst/switch_allocator_inst/east_arbiter/n141
+    0:01:21  124738.1      0.00       0.0      22.6 GEN_ROW[0].GEN_COL[1].mesh_router_inst/buf3/dut/n20
+    0:01:21  124867.1      0.00       0.0      22.6 GEN_ROW[1].GEN_COL[0].mesh_router_inst/buf1/dut/n29
+    0:01:21  124996.2      0.00       0.0      22.6 GEN_ROW[1].GEN_COL[2].mesh_router_inst/buf2/dut/n11
+    0:01:22  125125.2      0.00       0.0      22.5 GEN_ROW[2].GEN_COL[0].mesh_router_inst/buf2/dut/n20
+    0:01:22  125254.3      0.00       0.0      22.5 GEN_ROW[2].GEN_COL[2].mesh_router_inst/buf2/dut/n29
+    0:01:22  125383.3      0.00       0.0      22.4 GEN_ROW[3].GEN_COL[1].mesh_router_inst/buf1/dut/n11
+    0:01:22  125516.2      0.00       0.0      22.4 GEN_ROW[0].GEN_COL[0].mesh_router_inst/switch_allocator_inst/south_arbiter/n78
+    0:01:22  125685.1      0.00       0.0      22.3 GEN_ROW[1].GEN_COL[3].mesh_router_inst/switch_allocator_inst/west_arbiter/n78
+    0:01:22  125854.1      0.00       0.0      22.2 GEN_ROW[3].GEN_COL[2].mesh_router_inst/switch_allocator_inst/local_arbiter/n78
+    0:01:22  125991.1      0.00       0.0      22.1 GEN_ROW[0].GEN_COL[2].mesh_router_inst/switch_allocator_inst/north_arbiter/n164
+    0:01:22  126120.1      0.00       0.0      22.1 GEN_ROW[1].GEN_COL[0].mesh_router_inst/switch_allocator_inst/west_arbiter/n145
+    0:01:22  126249.2      0.00       0.0      22.1 GEN_ROW[1].GEN_COL[3].mesh_router_inst/switch_allocator_inst/north_arbiter/n164
+    0:01:22  126378.3      0.00       0.0      22.0 GEN_ROW[2].GEN_COL[1].mesh_router_inst/switch_allocator_inst/west_arbiter/n145
+    0:01:22  126507.3      0.00       0.0      22.0 GEN_ROW[3].GEN_COL[0].mesh_router_inst/switch_allocator_inst/north_arbiter/n164
+    0:01:22  126636.4      0.00       0.0      22.0 GEN_ROW[3].GEN_COL[2].mesh_router_inst/switch_allocator_inst/west_arbiter/n145
+    0:01:22  126765.4      0.00       0.0      21.9 GEN_ROW[0].GEN_COL[1].mesh_router_inst/switch_allocator_inst/north_arbiter/n154
+    0:01:23  126894.5      0.00       0.0      21.9 GEN_ROW[0].GEN_COL[3].mesh_router_inst/switch_allocator_inst/west_arbiter/n93
+    0:01:23  127023.6      0.00       0.0      21.9 GEN_ROW[1].GEN_COL[2].mesh_router_inst/switch_allocator_inst/north_arbiter/n154
+    0:01:23  127152.6      0.00       0.0      21.8 GEN_ROW[2].GEN_COL[0].mesh_router_inst/switch_allocator_inst/west_arbiter/n93
+    0:01:23  127281.7      0.00       0.0      21.8 GEN_ROW[2].GEN_COL[3].mesh_router_inst/switch_allocator_inst/north_arbiter/n154
+    0:01:23  127410.7      0.00       0.0      21.7 GEN_ROW[3].GEN_COL[1].mesh_router_inst/switch_allocator_inst/west_arbiter/n93
+    0:01:23  127539.8      0.00       0.0      21.7 GEN_ROW[0].GEN_COL[0].mesh_router_inst/switch_allocator_inst/north_mux/n6
+    0:01:23  127668.8      0.00       0.0      21.7 GEN_ROW[0].GEN_COL[0].mesh_router_inst/switch_allocator_inst/west_mux/n9
+    0:01:23  127797.9      0.00       0.0      21.6 GEN_ROW[0].GEN_COL[1].mesh_router_inst/switch_allocator_inst/east_mux/n12
+    0:01:23  127927.0      0.00       0.0      21.6 GEN_ROW[0].GEN_COL[1].mesh_router_inst/switch_allocator_inst/local_mux/n15
+    0:01:23  128056.0      0.00       0.0      21.6 GEN_ROW[0].GEN_COL[2].mesh_router_inst/switch_allocator_inst/south_mux/n18
+    0:01:23  128185.1      0.00       0.0      21.5 GEN_ROW[0].GEN_COL[3].mesh_router_inst/switch_allocator_inst/north_mux/n21
+    0:01:23  128314.1      0.00       0.0      21.5 GEN_ROW[0].GEN_COL[3].mesh_router_inst/switch_allocator_inst/west_mux/n24
+    0:01:23  128443.2      0.00       0.0      21.5 GEN_ROW[1].GEN_COL[0].mesh_router_inst/switch_allocator_inst/south_mux/n3
+    0:01:23  128572.2      0.00       0.0      21.4 GEN_ROW[1].GEN_COL[1].mesh_router_inst/switch_allocator_inst/north_mux/n6
+    0:01:23  128701.3      0.00       0.0      21.4 GEN_ROW[1].GEN_COL[1].mesh_router_inst/switch_allocator_inst/west_mux/n9
+    0:01:24  128830.4      0.00       0.0      21.4 GEN_ROW[1].GEN_COL[2].mesh_router_inst/switch_allocator_inst/east_mux/n12
+    0:01:24  128959.4      0.00       0.0      21.3 GEN_ROW[1].GEN_COL[2].mesh_router_inst/switch_allocator_inst/local_mux/n15
+    0:01:24  129088.5      0.00       0.0      21.3 GEN_ROW[1].GEN_COL[3].mesh_router_inst/switch_allocator_inst/south_mux/n18
+    0:01:24  129217.5      0.00       0.0      21.2 GEN_ROW[2].GEN_COL[0].mesh_router_inst/switch_allocator_inst/north_mux/n21
+    0:01:24  129346.6      0.00       0.0      21.2 GEN_ROW[2].GEN_COL[0].mesh_router_inst/switch_allocator_inst/west_mux/n24
+    0:01:24  129475.6      0.00       0.0      21.2 GEN_ROW[2].GEN_COL[1].mesh_router_inst/switch_allocator_inst/south_mux/n3
+    0:01:24  129604.7      0.00       0.0      21.1 GEN_ROW[2].GEN_COL[2].mesh_router_inst/switch_allocator_inst/north_mux/n6
+    0:01:24  129733.8      0.00       0.0      21.1 GEN_ROW[2].GEN_COL[2].mesh_router_inst/switch_allocator_inst/west_mux/n9
+    0:01:24  129862.8      0.00       0.0      21.1 GEN_ROW[2].GEN_COL[3].mesh_router_inst/switch_allocator_inst/east_mux/n12
+    0:01:24  129991.9      0.00       0.0      21.0 GEN_ROW[2].GEN_COL[3].mesh_router_inst/switch_allocator_inst/local_mux/n15
+    0:01:24  130120.9      0.00       0.0      21.0 GEN_ROW[3].GEN_COL[0].mesh_router_inst/switch_allocator_inst/south_mux/n18
+    0:01:24  130250.0      0.00       0.0      21.0 GEN_ROW[3].GEN_COL[1].mesh_router_inst/switch_allocator_inst/north_mux/n21
+    0:01:24  130379.0      0.00       0.0      20.9 GEN_ROW[3].GEN_COL[1].mesh_router_inst/switch_allocator_inst/west_mux/n24
+    0:01:24  130508.1      0.00       0.0      20.9 GEN_ROW[3].GEN_COL[2].mesh_router_inst/switch_allocator_inst/south_mux/n3
+    0:01:24  130637.2      0.00       0.0      20.9 GEN_ROW[3].GEN_COL[3].mesh_router_inst/switch_allocator_inst/north_mux/n6
+    0:01:24  130766.2      0.00       0.0      20.8 GEN_ROW[3].GEN_COL[3].mesh_router_inst/switch_allocator_inst/west_mux/n9
+    0:01:24  130900.4      0.00       0.0      20.8 GEN_ROW[0].GEN_COL[2].mesh_router_inst/switch_allocator_inst/south_arbiter/n67
+    0:01:25  131039.8      0.00       0.0      20.8 GEN_ROW[1].GEN_COL[3].mesh_router_inst/switch_allocator_inst/local_arbiter/n67
+    0:01:25  131179.2      0.00       0.0      20.7 GEN_ROW[3].GEN_COL[1].mesh_router_inst/switch_allocator_inst/east_arbiter/n67
+    0:01:25  131318.6      0.00       0.0      20.7 GEN_ROW[1].GEN_COL[0].mesh_router_inst/buf2/n24
+    0:01:25  131458.0      0.00       0.0      20.6 GEN_ROW[2].GEN_COL[3].mesh_router_inst/buf1/n24
+    0:01:25  131614.2      0.00       0.0      20.6 GEN_ROW[0].GEN_COL[1].mesh_router_inst/switch_allocator_inst/local_arbiter/n92
+    0:01:25  131783.2      0.00       0.0      20.5 GEN_ROW[1].GEN_COL[1].mesh_router_inst/switch_allocator_inst/south_arbiter/n92
+    0:01:25  131952.1      0.00       0.0      20.4 GEN_ROW[2].GEN_COL[1].mesh_router_inst/switch_allocator_inst/north_arbiter/n92
+    0:01:25  132121.1      0.00       0.0      20.3 GEN_ROW[3].GEN_COL[0].mesh_router_inst/switch_allocator_inst/west_arbiter/n92
+    0:01:25  132290.0      0.00       0.0      20.2 GEN_ROW[0].GEN_COL[0].mesh_router_inst/switch_allocator_inst/north_mux/n8
+    0:01:25  132459.0      0.00       0.0      20.1 GEN_ROW[0].GEN_COL[0].mesh_router_inst/switch_allocator_inst/local_mux/n20
+    0:01:25  132627.9      0.00       0.0      20.0 GEN_ROW[0].GEN_COL[1].mesh_router_inst/switch_allocator_inst/local_mux/n8
+    0:01:26  132796.9      0.00       0.0      19.9 GEN_ROW[0].GEN_COL[2].mesh_router_inst/switch_allocator_inst/west_mux/n20
+    0:01:26  132965.8      0.00       0.0      19.8 GEN_ROW[0].GEN_COL[3].mesh_router_inst/switch_allocator_inst/west_mux/n8
+    0:01:26  133134.8      0.00       0.0      19.7 GEN_ROW[1].GEN_COL[0].mesh_router_inst/switch_allocator_inst/south_mux/n20
+    0:01:26  133303.7      0.00       0.0      19.6 GEN_ROW[1].GEN_COL[1].mesh_router_inst/switch_allocator_inst/south_mux/n8
+    0:01:26  133472.7      0.00       0.0      19.5 GEN_ROW[1].GEN_COL[2].mesh_router_inst/switch_allocator_inst/east_mux/n20
+    0:01:26  133641.6      0.00       0.0      19.4 GEN_ROW[1].GEN_COL[3].mesh_router_inst/switch_allocator_inst/east_mux/n8
+    0:01:26  133810.6      0.00       0.0      19.3 GEN_ROW[2].GEN_COL[0].mesh_router_inst/switch_allocator_inst/north_mux/n20
+    0:01:26  133979.5      0.00       0.0      19.2 GEN_ROW[2].GEN_COL[1].mesh_router_inst/switch_allocator_inst/north_mux/n8
+    0:01:27  134148.5      0.00       0.0      19.0 GEN_ROW[2].GEN_COL[1].mesh_router_inst/switch_allocator_inst/local_mux/n20
+    0:01:27  134317.4      0.00       0.0      18.9 GEN_ROW[2].GEN_COL[2].mesh_router_inst/switch_allocator_inst/local_mux/n8
+    0:01:27  134486.4      0.00       0.0      18.8 GEN_ROW[2].GEN_COL[3].mesh_router_inst/switch_allocator_inst/west_mux/n20
+    0:01:27  134655.3      0.00       0.0      18.7 GEN_ROW[3].GEN_COL[0].mesh_router_inst/switch_allocator_inst/west_mux/n8
+    0:01:27  134824.3      0.00       0.0      18.6 GEN_ROW[3].GEN_COL[1].mesh_router_inst/switch_allocator_inst/south_mux/n20
+    0:01:27  134993.2      0.00       0.0      18.5 GEN_ROW[3].GEN_COL[2].mesh_router_inst/switch_allocator_inst/south_mux/n8
+    0:01:27  135162.2      0.00       0.0      18.4 GEN_ROW[3].GEN_COL[3].mesh_router_inst/switch_allocator_inst/east_mux/n20
+    0:01:27  135335.8      0.00       0.0      18.3 GEN_ROW[1].GEN_COL[1].mesh_router_inst/switch_allocator_inst/local_arbiter/n47
+    0:01:27  135509.9      0.00       0.0      18.2 GEN_ROW[1].GEN_COL[1].mesh_router_inst/buf3/n25
+    0:01:28  135673.2      0.00       0.0      18.1 GEN_ROW[0].GEN_COL[0].mesh_router_inst/switch_allocator_inst/north_arbiter/n83
+    0:01:28  135812.6      0.00       0.0      18.1 GEN_ROW[0].GEN_COL[1].mesh_router_inst/switch_allocator_inst/south_arbiter/n84
+    0:01:28  135952.0      0.00       0.0      18.1 GEN_ROW[0].GEN_COL[2].mesh_router_inst/switch_allocator_inst/local_arbiter/n60
+    0:01:28  136091.4      0.00       0.0      18.0 GEN_ROW[1].GEN_COL[0].mesh_router_inst/switch_allocator_inst/north_arbiter/n130
+    0:01:28  136230.7      0.00       0.0      18.0 GEN_ROW[1].GEN_COL[1].mesh_router_inst/switch_allocator_inst/south_arbiter/n83
+    0:01:28  136370.1      0.00       0.0      18.0 GEN_ROW[1].GEN_COL[2].mesh_router_inst/switch_allocator_inst/local_arbiter/n84
+    0:01:28  136509.5      0.00       0.0      17.9 GEN_ROW[2].GEN_COL[0].mesh_router_inst/switch_allocator_inst/east_arbiter/n60
+    0:01:28  136648.9      0.00       0.0      17.9 GEN_ROW[2].GEN_COL[1].mesh_router_inst/switch_allocator_inst/south_arbiter/n130
+    0:01:28  136788.3      0.00       0.0      17.9 GEN_ROW[2].GEN_COL[2].mesh_router_inst/switch_allocator_inst/local_arbiter/n83
+    0:01:28  136927.7      0.00       0.0      17.8 GEN_ROW[3].GEN_COL[0].mesh_router_inst/switch_allocator_inst/east_arbiter/n84
+    0:01:28  137067.0      0.00       0.0      17.8 GEN_ROW[3].GEN_COL[1].mesh_router_inst/switch_allocator_inst/west_arbiter/n60
+    0:01:28  137206.4      0.00       0.0      17.8 GEN_ROW[3].GEN_COL[2].mesh_router_inst/switch_allocator_inst/local_arbiter/n130
+    0:01:28  137345.8      0.00       0.0      17.7 GEN_ROW[0].GEN_COL[1].mesh_router_inst/switch_allocator_inst/east_arbiter/n64
+    0:01:28  137485.2      0.00       0.0      17.7 GEN_ROW[1].GEN_COL[2].mesh_router_inst/switch_allocator_inst/west_arbiter/n64
+    0:01:28  137624.6      0.00       0.0      17.7 GEN_ROW[3].GEN_COL[0].mesh_router_inst/switch_allocator_inst/north_arbiter/n64
+    0:01:29  137764.0      0.00       0.0      17.6 GEN_ROW[0].GEN_COL[1].mesh_router_inst/switch_allocator_inst/south_arbiter/n163
+    0:01:29  137903.3      0.00       0.0      17.6 GEN_ROW[1].GEN_COL[2].mesh_router_inst/switch_allocator_inst/local_arbiter/n163
+    0:01:29  138042.7      0.00       0.0      17.6 GEN_ROW[3].GEN_COL[0].mesh_router_inst/switch_allocator_inst/east_arbiter/n163
+    0:01:29  138196.6      0.00       0.0      17.5 GEN_ROW[0].GEN_COL[2].mesh_router_inst/switch_allocator_inst/south_arbiter/n68
+    0:01:29  138379.7      0.00       0.0      17.4 GEN_ROW[2].GEN_COL[2].mesh_router_inst/switch_allocator_inst/east_arbiter/n68
+    0:01:29  138552.4      0.00       0.0      17.3 GEN_ROW[0].GEN_COL[2].mesh_router_inst/buf3/n22
+    0:01:29  138691.8      0.00       0.0      17.3 GEN_ROW[2].GEN_COL[1].mesh_router_inst/buf3/n22
+    0:01:29  138836.8      0.00       0.0      17.2 GEN_ROW[0].GEN_COL[1].mesh_router_inst/switch_allocator_inst/local_arbiter/n160
+    0:01:29  139005.7      0.00       0.0      17.1 GEN_ROW[2].GEN_COL[1].mesh_router_inst/switch_allocator_inst/north_arbiter/n160
+    0:01:29  139173.7      0.00       0.0      17.1 GEN_ROW[0].GEN_COL[0].mesh_router_inst/route_compute_inst/n70
+    0:01:29  139334.2      0.00       0.0      17.0 GEN_ROW[1].GEN_COL[3].mesh_router_inst/route_compute_inst/n94
+    0:01:30  139494.7      0.00       0.0      16.9 GEN_ROW[3].GEN_COL[3].mesh_router_inst/route_compute_inst/n78
+    0:01:30  139627.1      0.00       0.0      16.8 GEN_ROW[0].GEN_COL[2].mesh_router_inst/switch_allocator_inst/east_arbiter/n152
+    0:01:30  139756.1      0.00       0.0      16.8 GEN_ROW[1].GEN_COL[0].mesh_router_inst/switch_allocator_inst/local_arbiter/n91
+    0:01:30  139885.2      0.00       0.0      16.8 GEN_ROW[1].GEN_COL[3].mesh_router_inst/switch_allocator_inst/east_arbiter/n152
+    0:01:30  140014.2      0.00       0.0      16.8 GEN_ROW[2].GEN_COL[1].mesh_router_inst/switch_allocator_inst/local_arbiter/n91
+    0:01:30  140143.3      0.00       0.0      16.7 GEN_ROW[3].GEN_COL[0].mesh_router_inst/switch_allocator_inst/east_arbiter/n152
+    0:01:30  140272.4      0.00       0.0      16.7 GEN_ROW[3].GEN_COL[2].mesh_router_inst/switch_allocator_inst/local_arbiter/n91
+    0:01:30  140401.4      0.00       0.0      16.7 GEN_ROW[0].GEN_COL[0].mesh_router_inst/switch_allocator_inst/east_mux/n16
+    0:01:30  140530.5      0.00       0.0      16.7 GEN_ROW[0].GEN_COL[0].mesh_router_inst/switch_allocator_inst/local_mux/n19
+    0:01:30  140659.5      0.00       0.0      16.6 GEN_ROW[0].GEN_COL[1].mesh_router_inst/switch_allocator_inst/south_mux/n22
+    0:01:30  140788.6      0.00       0.0      16.6 GEN_ROW[0].GEN_COL[2].mesh_router_inst/switch_allocator_inst/east_mux/n1
+    0:01:30  140917.6      0.00       0.0      16.6 GEN_ROW[0].GEN_COL[2].mesh_router_inst/switch_allocator_inst/local_mux/n4
+    0:01:30  141046.7      0.00       0.0      16.6 GEN_ROW[0].GEN_COL[3].mesh_router_inst/switch_allocator_inst/south_mux/n7
+    0:01:30  141175.8      0.00       0.0      16.5 GEN_ROW[1].GEN_COL[0].mesh_router_inst/switch_allocator_inst/north_mux/n10
+    0:01:30  141304.8      0.00       0.0      16.5 GEN_ROW[1].GEN_COL[0].mesh_router_inst/switch_allocator_inst/west_mux/n13
+    0:01:30  141433.9      0.00       0.0      16.5 GEN_ROW[1].GEN_COL[1].mesh_router_inst/switch_allocator_inst/east_mux/n16
+    0:01:30  141562.9      0.00       0.0      16.5 GEN_ROW[1].GEN_COL[1].mesh_router_inst/switch_allocator_inst/local_mux/n19
+    0:01:31  141692.0      0.00       0.0      16.4 GEN_ROW[1].GEN_COL[2].mesh_router_inst/switch_allocator_inst/south_mux/n22
+    0:01:31  141821.0      0.00       0.0      16.4 GEN_ROW[1].GEN_COL[3].mesh_router_inst/switch_allocator_inst/east_mux/n1
+    0:01:31  141950.1      0.00       0.0      16.4 GEN_ROW[1].GEN_COL[3].mesh_router_inst/switch_allocator_inst/local_mux/n4
+    0:01:31  142079.2      0.00       0.0      16.4 GEN_ROW[2].GEN_COL[0].mesh_router_inst/switch_allocator_inst/south_mux/n7
+    0:01:31  142208.2      0.00       0.0      16.3 GEN_ROW[2].GEN_COL[1].mesh_router_inst/switch_allocator_inst/north_mux/n10
+    0:01:31  142337.3      0.00       0.0      16.3 GEN_ROW[2].GEN_COL[1].mesh_router_inst/switch_allocator_inst/west_mux/n13
+    0:01:31  142466.3      0.00       0.0      16.3 GEN_ROW[2].GEN_COL[2].mesh_router_inst/switch_allocator_inst/east_mux/n16
+    0:01:31  142595.4      0.00       0.0      16.3 GEN_ROW[2].GEN_COL[2].mesh_router_inst/switch_allocator_inst/local_mux/n19
+    0:01:31  142724.5      0.00       0.0      16.2 GEN_ROW[2].GEN_COL[3].mesh_router_inst/switch_allocator_inst/south_mux/n22
+    0:01:31  142853.5      0.00       0.0      16.2 GEN_ROW[3].GEN_COL[0].mesh_router_inst/switch_allocator_inst/east_mux/n1
+    0:01:31  142982.6      0.00       0.0      16.2 GEN_ROW[3].GEN_COL[0].mesh_router_inst/switch_allocator_inst/local_mux/n4
+    0:01:31  143111.6      0.00       0.0      16.2 GEN_ROW[3].GEN_COL[1].mesh_router_inst/switch_allocator_inst/south_mux/n7
+    0:01:31  143240.7      0.00       0.0      16.1 GEN_ROW[3].GEN_COL[2].mesh_router_inst/switch_allocator_inst/north_mux/n10
+    0:01:31  143369.7      0.00       0.0      16.1 GEN_ROW[3].GEN_COL[2].mesh_router_inst/switch_allocator_inst/west_mux/n13
+    0:01:31  143498.8      0.00       0.0      16.1 GEN_ROW[3].GEN_COL[3].mesh_router_inst/switch_allocator_inst/east_mux/n16
+    0:01:31  143627.9      0.00       0.0      16.1 GEN_ROW[3].GEN_COL[3].mesh_router_inst/switch_allocator_inst/local_mux/n19
+    0:01:32  143820.7      0.00       0.0      16.0 GEN_ROW[1].GEN_COL[3].mesh_router_inst/switch_allocator_inst/local_arbiter/n133
+    0:01:32  144018.8      0.00       0.0      15.9 GEN_ROW[0].GEN_COL[0].mesh_router_inst/buf1/n27
+    0:01:32  144158.2      0.00       0.0      15.8 GEN_ROW[1].GEN_COL[1].mesh_router_inst/buf3/n27
+    0:01:32  144297.5      0.00       0.0      15.8 GEN_ROW[2].GEN_COL[3].mesh_router_inst/buf0/n27
+    0:01:32  144440.2      0.00       0.0      15.8 GEN_ROW[0].GEN_COL[0].mesh_router_inst/switch_allocator_inst/east_arbiter/n65
+    0:01:32  144637.3      0.00       0.0      15.7 GEN_ROW[0].GEN_COL[3].mesh_router_inst/switch_allocator_inst/north_arbiter/n65
+    0:01:32  144834.4      0.00       0.0      15.6 GEN_ROW[1].GEN_COL[1].mesh_router_inst/switch_allocator_inst/local_arbiter/n65
+    0:01:32  145031.5      0.00       0.0      15.6 GEN_ROW[2].GEN_COL[0].mesh_router_inst/switch_allocator_inst/west_arbiter/n65
+    0:01:32  145228.6      0.00       0.0      15.5 GEN_ROW[2].GEN_COL[3].mesh_router_inst/switch_allocator_inst/south_arbiter/n65
+    0:01:33  145425.7      0.00       0.0      15.4 GEN_ROW[3].GEN_COL[2].mesh_router_inst/switch_allocator_inst/east_arbiter/n65
+    0:01:33  145622.8      0.00       0.0      15.3 GEN_ROW[2].GEN_COL[2].mesh_router_inst/buf4/dut/n46
+    0:01:33  145783.3      0.00       0.0      15.3 GEN_ROW[0].GEN_COL[1].mesh_router_inst/switch_allocator_inst/north_arbiter/n144
+    0:01:33  145927.9      0.00       0.0      15.3 GEN_ROW[0].GEN_COL[2].mesh_router_inst/switch_allocator_inst/south_arbiter/n144
+    0:01:33  146072.4      0.00       0.0      15.2 GEN_ROW[0].GEN_COL[3].mesh_router_inst/switch_allocator_inst/local_arbiter/n144
+    0:01:33  146217.0      0.00       0.0      15.2 GEN_ROW[1].GEN_COL[1].mesh_router_inst/switch_allocator_inst/east_arbiter/n144
+    0:01:33  146361.5      0.00       0.0      15.2 GEN_ROW[1].GEN_COL[2].mesh_router_inst/switch_allocator_inst/west_arbiter/n144
+    0:01:33  146506.1      0.00       0.0      15.2 GEN_ROW[2].GEN_COL[0].mesh_router_inst/switch_allocator_inst/north_arbiter/n144
+    0:01:33  146650.6      0.00       0.0      15.2 GEN_ROW[2].GEN_COL[1].mesh_router_inst/switch_allocator_inst/south_arbiter/n144
+    0:01:33  146795.2      0.00       0.0      15.2 GEN_ROW[2].GEN_COL[2].mesh_router_inst/switch_allocator_inst/local_arbiter/n144
+    0:01:33  146939.7      0.00       0.0      15.2 GEN_ROW[3].GEN_COL[0].mesh_router_inst/switch_allocator_inst/east_arbiter/n144
+    0:01:34  147084.2      0.00       0.0      15.2 GEN_ROW[3].GEN_COL[1].mesh_router_inst/switch_allocator_inst/west_arbiter/n144
+    0:01:34  147228.8      0.00       0.0      15.1 GEN_ROW[3].GEN_COL[3].mesh_router_inst/switch_allocator_inst/north_arbiter/n144
+    0:01:34  147373.3      0.00       0.0      15.1 GEN_ROW[0].GEN_COL[1].mesh_router_inst/buf4/n30
+    0:01:34  147517.9      0.00       0.0      15.1 GEN_ROW[1].GEN_COL[3].mesh_router_inst/buf2/n30
+    0:01:34  147662.4      0.00       0.0      15.1 GEN_ROW[3].GEN_COL[1].mesh_router_inst/buf0/n30
+    0:01:34  147807.0      0.00       0.0      15.1 GEN_ROW[0].GEN_COL[2].mesh_router_inst/switch_allocator_inst/rd_en_local
+    0:01:34  147951.5      0.00       0.0      15.1 GEN_ROW[2].GEN_COL[0].mesh_router_inst/switch_allocator_inst/rd_en_south
+    0:01:34  148096.1      0.00       0.0      15.1 GEN_ROW[3].GEN_COL[1].mesh_router_inst/switch_allocator_inst/rd_en_east
+    0:01:34  148240.6      0.00       0.0      15.1 GEN_ROW[2].GEN_COL[0].mesh_router_inst/switch_allocator_inst/local_arbiter/n46
+    0:01:34  148385.1      0.00       0.0      15.0 GEN_ROW[0].GEN_COL[0].mesh_router_inst/switch_allocator_inst/local_arbiter/n137
+    0:01:34  148524.5      0.00       0.0      15.0 GEN_ROW[0].GEN_COL[2].mesh_router_inst/switch_allocator_inst/west_arbiter/n137
+    0:01:34  148663.9      0.00       0.0      15.0 GEN_ROW[1].GEN_COL[0].mesh_router_inst/switch_allocator_inst/south_arbiter/n137
+    0:01:35  148803.3      0.00       0.0      15.0 GEN_ROW[1].GEN_COL[2].mesh_router_inst/switch_allocator_inst/east_arbiter/n137
+    0:01:35  148942.7      0.00       0.0      15.0 GEN_ROW[2].GEN_COL[0].mesh_router_inst/switch_allocator_inst/north_arbiter/n137
+    0:01:35  149082.1      0.00       0.0      15.0 GEN_ROW[2].GEN_COL[1].mesh_router_inst/switch_allocator_inst/local_arbiter/n137
+    0:01:35  149221.4      0.00       0.0      15.0 GEN_ROW[2].GEN_COL[3].mesh_router_inst/switch_allocator_inst/west_arbiter/n137
+    0:01:35  149360.8      0.00       0.0      15.0 GEN_ROW[3].GEN_COL[1].mesh_router_inst/switch_allocator_inst/south_arbiter/n137
+    0:01:35  149500.2      0.00       0.0      15.0 GEN_ROW[3].GEN_COL[3].mesh_router_inst/switch_allocator_inst/east_arbiter/n137
+    0:01:35  149639.6      0.00       0.0      15.0 GEN_ROW[0].GEN_COL[0].mesh_router_inst/buf2/dut/C85/net12466
+    0:01:35  149779.0      0.00       0.0      15.0 GEN_ROW[0].GEN_COL[1].mesh_router_inst/buf0/dut/C85/net12476
+    0:01:35  149918.4      0.00       0.0      14.9 GEN_ROW[0].GEN_COL[1].mesh_router_inst/buf3/dut/C85/net12482
+    0:01:35  150057.7      0.00       0.0      14.9 GEN_ROW[0].GEN_COL[2].mesh_router_inst/buf2/dut/C85/net12472
+    0:01:35  150197.1      0.00       0.0      14.9 GEN_ROW[0].GEN_COL[3].mesh_router_inst/buf0/dut/C85/net12478
+    0:01:36  150336.5      0.00       0.0      14.9 GEN_ROW[0].GEN_COL[3].mesh_router_inst/buf3/dut/C85/net12484
+    0:01:36  150475.9      0.00       0.0      14.9 GEN_ROW[1].GEN_COL[0].mesh_router_inst/buf2/dut/C85/net12474
+    0:01:36  150615.3      0.00       0.0      14.9 GEN_ROW[1].GEN_COL[1].mesh_router_inst/buf0/dut/C85/net12480
+    0:01:36  150754.6      0.00       0.0      14.9 GEN_ROW[1].GEN_COL[1].mesh_router_inst/buf4/dut/C85/net12466
+    0:01:36  150894.0      0.00       0.0      14.9 GEN_ROW[1].GEN_COL[2].mesh_router_inst/buf2/dut/C85/net12476
+    0:01:36  151033.4      0.00       0.0      14.9 GEN_ROW[1].GEN_COL[3].mesh_router_inst/buf0/dut/C85/net12482
+    0:01:36  151172.8      0.00       0.0      14.9 GEN_ROW[1].GEN_COL[3].mesh_router_inst/buf4/dut/C85/net12472
+    0:01:36  151312.2      0.00       0.0      14.9 GEN_ROW[2].GEN_COL[0].mesh_router_inst/buf2/dut/C85/net12478
+    0:01:36  151451.6      0.00       0.0      14.8 GEN_ROW[2].GEN_COL[1].mesh_router_inst/buf0/dut/C85/net12484
+    0:01:36  151590.9      0.00       0.0      14.8 GEN_ROW[2].GEN_COL[1].mesh_router_inst/buf4/dut/C85/net12474
+    0:01:37  151730.3      0.00       0.0      14.8 GEN_ROW[2].GEN_COL[2].mesh_router_inst/buf2/dut/C85/net12480
+    0:01:37  151869.7      0.00       0.0      14.8 GEN_ROW[2].GEN_COL[3].mesh_router_inst/buf1/dut/C85/net12466
+    0:01:37  152009.1      0.00       0.0      14.8 GEN_ROW[2].GEN_COL[3].mesh_router_inst/buf4/dut/C85/net12476
+    0:01:37  152148.5      0.00       0.0      14.8 GEN_ROW[3].GEN_COL[0].mesh_router_inst/buf2/dut/C85/net12482
+    0:01:37  152287.8      0.00       0.0      14.8 GEN_ROW[3].GEN_COL[1].mesh_router_inst/buf1/dut/C85/net12472
+    0:01:37  152427.2      0.00       0.0      14.8 GEN_ROW[3].GEN_COL[1].mesh_router_inst/buf4/dut/C85/net12478
+    0:01:37  152566.6      0.00       0.0      14.8 GEN_ROW[3].GEN_COL[2].mesh_router_inst/buf2/dut/C85/net12484
+    0:01:37  152706.0      0.00       0.0      14.8 GEN_ROW[3].GEN_COL[3].mesh_router_inst/buf1/dut/C85/net12474
+    0:01:37  152845.4      0.00       0.0      14.8 GEN_ROW[3].GEN_COL[3].mesh_router_inst/buf4/dut/C85/net12480
+    0:01:37  153038.7      0.00       0.0      14.7 GEN_ROW[1].GEN_COL[3].mesh_router_inst/buf3/n38
+    0:01:38  153236.3      0.00       0.0      14.6 GEN_ROW[0].GEN_COL[0].mesh_router_inst/buf0/n36
+    0:01:38  153380.8      0.00       0.0      14.6 GEN_ROW[2].GEN_COL[0].mesh_router_inst/buf1/n36
+    0:01:38  153525.4      0.00       0.0      14.6 GEN_ROW[3].GEN_COL[3].mesh_router_inst/buf3/n36
+    0:01:38  153664.8      0.00       0.0      14.6 GEN_ROW[0].GEN_COL[2].mesh_router_inst/switch_allocator_inst/south_arbiter/n100
+    0:01:38  153804.2      0.00       0.0      14.6 GEN_ROW[1].GEN_COL[1].mesh_router_inst/switch_allocator_inst/east_arbiter/n90
+    0:01:38  153943.5      0.00       0.0      14.6 GEN_ROW[1].GEN_COL[3].mesh_router_inst/switch_allocator_inst/local_arbiter/n100
+    0:01:38  154082.9      0.00       0.0      14.6 GEN_ROW[2].GEN_COL[2].mesh_router_inst/switch_allocator_inst/west_arbiter/n90
+    0:01:38  154222.3      0.00       0.0      14.6 GEN_ROW[3].GEN_COL[1].mesh_router_inst/switch_allocator_inst/east_arbiter/n100
+    0:01:38  154361.7      0.00       0.0      14.6 GEN_ROW[0].GEN_COL[0].mesh_router_inst/buf0/dut/C85/net12465
+    0:01:38  154501.1      0.00       0.0      14.5 GEN_ROW[0].GEN_COL[0].mesh_router_inst/buf3/dut/C85/net12475
+    0:01:38  154640.4      0.00       0.0      14.5 GEN_ROW[0].GEN_COL[1].mesh_router_inst/buf1/dut/C85/net12481
+    0:01:38  154779.8      0.00       0.0      14.5 GEN_ROW[0].GEN_COL[2].mesh_router_inst/buf0/dut/C85/net12471
+    0:01:38  154919.2      0.00       0.0      14.5 GEN_ROW[0].GEN_COL[2].mesh_router_inst/buf3/dut/C85/net12477
+    0:01:39  155058.6      0.00       0.0      14.5 GEN_ROW[0].GEN_COL[3].mesh_router_inst/buf1/dut/C85/net12483
+    0:01:39  155198.0      0.00       0.0      14.5 GEN_ROW[1].GEN_COL[0].mesh_router_inst/buf0/dut/C85/net12473
+    0:01:39  155337.4      0.00       0.0      14.5 GEN_ROW[1].GEN_COL[0].mesh_router_inst/buf3/dut/C85/net12479
+    0:01:39  155476.7      0.00       0.0      14.5 GEN_ROW[1].GEN_COL[1].mesh_router_inst/buf2/dut/C85/net12465
+    0:01:39  155616.1      0.00       0.0      14.5 GEN_ROW[1].GEN_COL[2].mesh_router_inst/buf0/dut/C85/net12475
+    0:01:39  155755.5      0.00       0.0      14.5 GEN_ROW[1].GEN_COL[2].mesh_router_inst/buf3/dut/C85/net12481
+    0:01:39  155894.9      0.00       0.0      14.5 GEN_ROW[1].GEN_COL[3].mesh_router_inst/buf2/dut/C85/net12471
+    0:01:39  156034.3      0.00       0.0      14.5 GEN_ROW[2].GEN_COL[0].mesh_router_inst/buf0/dut/C85/net12477
+    0:01:39  156173.7      0.00       0.0      14.5 GEN_ROW[2].GEN_COL[0].mesh_router_inst/buf3/dut/C85/net12483
+    0:01:39  156313.0      0.00       0.0      14.5 GEN_ROW[2].GEN_COL[1].mesh_router_inst/buf2/dut/C85/net12473
+    0:01:39  156452.4      0.00       0.0      14.4 GEN_ROW[2].GEN_COL[2].mesh_router_inst/buf0/dut/C85/net12479
+    0:01:40  156591.8      0.00       0.0      14.4 GEN_ROW[2].GEN_COL[2].mesh_router_inst/buf4/dut/C85/net12465
+    0:01:40  156731.2      0.00       0.0      14.4 GEN_ROW[2].GEN_COL[3].mesh_router_inst/buf2/dut/C85/net12475
+    0:01:40  156870.6      0.00       0.0      14.4 GEN_ROW[3].GEN_COL[0].mesh_router_inst/buf0/dut/C85/net12481
+    0:01:40  157009.9      0.00       0.0      14.4 GEN_ROW[3].GEN_COL[0].mesh_router_inst/buf4/dut/C85/net12471
+    0:01:40  157149.3      0.00       0.0      14.4 GEN_ROW[3].GEN_COL[1].mesh_router_inst/buf2/dut/C85/net12477
+    0:01:40  157288.7      0.00       0.0      14.4 GEN_ROW[3].GEN_COL[2].mesh_router_inst/buf0/dut/C85/net12483
+    0:01:40  157428.1      0.00       0.0      14.4 GEN_ROW[3].GEN_COL[2].mesh_router_inst/buf4/dut/C85/net12473
+    0:01:40  157567.5      0.00       0.0      14.4 GEN_ROW[3].GEN_COL[3].mesh_router_inst/buf2/dut/C85/net12479
+    0:01:40  157682.0      0.00       0.0      14.4 GEN_ROW[0].GEN_COL[0].mesh_router_inst/switch_allocator_inst/east_arbiter/n126
+    0:01:40  157743.9      0.00       0.0      14.3 GEN_ROW[0].GEN_COL[0].mesh_router_inst/switch_allocator_inst/local_arbiter/net50526
+    0:01:40  157806.8      0.00       0.0      14.2 GEN_ROW[0].GEN_COL[1].mesh_router_inst/switch_allocator_inst/west_arbiter/n126
+    0:01:40  157868.8      0.00       0.0      14.2 GEN_ROW[0].GEN_COL[2].mesh_router_inst/switch_allocator_inst/east_arbiter/net50571
+    0:01:41  157931.6      0.00       0.0      14.1 GEN_ROW[0].GEN_COL[3].mesh_router_inst/switch_allocator_inst/north_arbiter/n126
+    0:01:41  157993.6      0.00       0.0      14.0 GEN_ROW[0].GEN_COL[3].mesh_router_inst/switch_allocator_inst/west_arbiter/net48117
+    0:01:41  158056.5      0.00       0.0      14.0 GEN_ROW[1].GEN_COL[0].mesh_router_inst/switch_allocator_inst/south_arbiter/n126
+    0:01:41  158118.4      0.00       0.0      13.9 GEN_ROW[1].GEN_COL[1].mesh_router_inst/switch_allocator_inst/north_arbiter/net48762
+    0:01:41  158181.3      0.00       0.0      13.8 GEN_ROW[1].GEN_COL[1].mesh_router_inst/switch_allocator_inst/local_arbiter/n126
+    0:01:41  158243.3      0.00       0.0      13.8 GEN_ROW[1].GEN_COL[2].mesh_router_inst/switch_allocator_inst/south_arbiter/net47817
+    0:01:41  158306.1      0.00       0.0      13.7 GEN_ROW[1].GEN_COL[3].mesh_router_inst/switch_allocator_inst/east_arbiter/n126
+    0:01:41  158368.1      0.00       0.0      13.6 GEN_ROW[1].GEN_COL[3].mesh_router_inst/switch_allocator_inst/local_arbiter/net50736
+    0:01:41  158431.0      0.00       0.0      13.6 GEN_ROW[2].GEN_COL[0].mesh_router_inst/switch_allocator_inst/west_arbiter/n126
+    0:01:41  158492.9      0.00       0.0      13.5 GEN_ROW[2].GEN_COL[1].mesh_router_inst/switch_allocator_inst/east_arbiter/net50781
+    0:01:41  158555.8      0.00       0.0      13.5 GEN_ROW[2].GEN_COL[2].mesh_router_inst/switch_allocator_inst/north_arbiter/n126
+    0:01:42  158617.8      0.00       0.0      13.4 GEN_ROW[2].GEN_COL[2].mesh_router_inst/switch_allocator_inst/west_arbiter/net48432
+    0:01:42  158680.7      0.00       0.0      13.3 GEN_ROW[2].GEN_COL[3].mesh_router_inst/switch_allocator_inst/south_arbiter/n126
+    0:01:42  158742.6      0.00       0.0      13.3 GEN_ROW[3].GEN_COL[0].mesh_router_inst/switch_allocator_inst/north_arbiter/net48867
+    0:01:42  158805.5      0.00       0.0      13.2 GEN_ROW[3].GEN_COL[0].mesh_router_inst/switch_allocator_inst/local_arbiter/n126
+    0:01:42  158867.4      0.00       0.0      13.1 GEN_ROW[3].GEN_COL[1].mesh_router_inst/switch_allocator_inst/south_arbiter/net47922
+    0:01:42  158930.3      0.00       0.0      13.1 GEN_ROW[3].GEN_COL[2].mesh_router_inst/switch_allocator_inst/east_arbiter/n126
+    0:01:42  158992.3      0.00       0.0      13.0 GEN_ROW[3].GEN_COL[2].mesh_router_inst/switch_allocator_inst/local_arbiter/net50946
+    0:01:42  159055.2      0.00       0.0      12.9 GEN_ROW[3].GEN_COL[3].mesh_router_inst/switch_allocator_inst/west_arbiter/n126
+    0:01:46  159088.5      0.00       0.0      12.9 GEN_ROW[0].GEN_COL[0].mesh_router_inst/switch_allocator_inst/south_demux/op[4]
+    0:03:33  159132.1      0.00       0.0      12.8                          
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:03:33  159132.1      0.00       0.0      12.8                          
+    0:03:33  159132.1      0.00       0.0      12.8                          
+    0:03:37  146254.5      0.00       0.0      12.8                          
+    0:03:38  138279.7      0.00       0.0      12.8                          
+    0:03:40  133433.7      0.00       0.0      12.8                          
+    0:03:41  131058.1      0.00       0.0      12.8                          
+    0:03:42  130287.1      0.00       0.0      12.8                          
+    0:03:42  129510.8      0.00       0.0      12.8                          
+    0:03:43  129032.2      0.00       0.0      12.8                          
+    0:03:43  128660.5      0.00       0.0      12.8                          
+    0:03:43  128660.5      0.00       0.0      12.8                          
+    0:03:43  128660.5      0.00       0.0      12.8                          
+    0:03:44  127928.4      0.00       0.0      12.8                          
+    0:03:44  127928.4      0.00       0.0      12.8                          
+    0:03:44  127928.4      0.00       0.0      12.8                          
+    0:03:44  127928.4      0.00       0.0      12.8                          
+    0:03:44  127928.4      0.00       0.0      12.8                          
+    0:03:44  127928.4      0.00       0.0      12.8                          
+    0:03:45  127928.4      0.00       0.0      12.8                          
+Loading db file '/home/scf-22/ee577/NCSU45PDK/FreePDK45/osu_soc/lib/files/gscl45nm.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Warning: Design 'mesh_general' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+     Net 'GEN_ROW[0].GEN_COL[1].mesh_router_inst/route_compute_inst/net68': 3360 load(s), 1 driver(s)
+1
+# For better synthesis result, use "compile_ultra" command.
+# compile_ultra is doing automatic ungrouping during optimization,
+# therefore sometimes it's hard to figure out the critical path 
+# from the synthesized netlist.
+# So, use "compile" command for now.
+# Writing the synthesis result into Synopsys db format.
+# You can read the saved db file into DesignCompiler later using
+# "read_db" command for further analysis (timing, area...).
+#write -xg_force_db -format db -hierarchy -out db/$design_name.db ;
+# Generating timing and are report of the synthezied design.
+report_timing > report/$design_name.timing ;
+report_area > report/$design_name.area ;
+# Writing synthesized gate-level verilog netlist.
+# This verilog netlist will be used for post-synthesis gate-level simulation.
+change_names -rules verilog -hierarchy ;
+1
+write -format verilog -hierarchy -out netlist/${design_name}_syn.v ;
+Writing verilog file '/home/viterbi/07/ruochenj/EE577B/mesh_wormhole/netlist/mesh_general_syn.v'.
+1
+# Writing Standard Delay Format (SDF) back-annotation file.
+# This delay information can be used for post-synthesis simulation.
+write_sdf netlist/${design_name}_syn.sdf;
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/home/viterbi/07/ruochenj/EE577B/mesh_wormhole/netlist/mesh_general_syn.sdf'. (WT-3)
+1
+write_sdc netlist/${design_name}_syn.sdc
+1
+1
+dc_shell> report_power
+Loading db file '/home/scf-22/ee577/NCSU45PDK/FreePDK45/osu_soc/lib/files/gscl45nm.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : mesh_general
+Version: K-2015.06-SP5-5
+Date   : Thu Apr 17 16:53:42 2025
+****************************************
+
+
+Library(s) Used:
+
+    gscl45nm (File: /home/scf-22/ee577/NCSU45PDK/FreePDK45/osu_soc/lib/files/gscl45nm.db)
+
+
+Operating Conditions: typical   Library: gscl45nm
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 1.1  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+  Cell Internal Power  =  10.5130 mW   (93%)
+  Net Switching Power  = 774.7303 uW    (7%)
+                         ---------
+Total Dynamic Power    =  11.2877 mW  (100%)
+
+Cell Leakage Power     = 595.0051 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register           9.8237        9.4474e-02        1.8901e+05           10.1072  (  85.06%)
+sequential     9.5358e-03        8.2086e-04        3.9205e+03        1.4277e-02  (   0.12%)
+combinational      0.6796            0.6794        4.0207e+05            1.7611  (  14.82%)
+--------------------------------------------------------------------------------------------------
+Total             10.5128 mW         0.7747 mW     5.9501e+05 nW        11.8825 mW
+1
+dc_shell> 

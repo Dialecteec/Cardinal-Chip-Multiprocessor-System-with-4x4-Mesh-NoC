@@ -1,0 +1,113 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'gold_mesh' contains 2 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : gold_mesh
+Version: K-2015.06-SP5-5
+Date   : Thu Apr 17 17:27:02 2025
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: gscl45nm
+Wire Load Model Mode: top
+
+  Startpoint: polarity_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: router_0_3/buf_peo_v1/mem_reg[32]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  polarity_reg/CLK (DFFPOSX1)                             0.00 #     0.00 r
+  polarity_reg/Q (DFFPOSX1)                               0.11       0.11 f
+  U10/Y (BUFX2)                                           0.05       0.15 f
+  router_0_3/polarity (gold_router_3)                     0.00       0.15 f
+  router_0_3/U3323/Y (INVX1)                              0.01       0.16 r
+  router_0_3/U3309/Y (INVX1)                              0.02       0.18 f
+  router_0_3/U3291/Y (INVX1)                              0.01       0.19 r
+  router_0_3/U3224/Y (INVX1)                              0.02       0.22 f
+  router_0_3/U3190/Y (INVX1)                              0.12       0.34 r
+  router_0_3/U819/Y (NOR3X1)                              0.08       0.42 f
+  router_0_3/U816/Y (NAND3X1)                             0.04       0.46 r
+  router_0_3/U3116/Y (BUFX2)                              0.03       0.50 r
+  router_0_3/U3/Y (AND2X1)                                0.03       0.52 r
+  router_0_3/U3114/Y (INVX1)                              0.04       0.56 f
+  router_0_3/arb_peo/req_1 (arbiter4_9)                   0.00       0.56 f
+  router_0_3/arb_peo/U70/Y (AND2X1)                       0.04       0.60 f
+  router_0_3/arb_peo/U65/Y (AOI21X1)                      0.02       0.62 r
+  router_0_3/arb_peo/U69/Y (BUFX2)                        0.04       0.66 r
+  router_0_3/arb_peo/U3/Y (AND2X1)                        0.04       0.70 r
+  router_0_3/arb_peo/U68/Y (INVX1)                        0.03       0.72 f
+  router_0_3/arb_peo/U58/Y (NOR3X1)                       0.06       0.78 r
+  router_0_3/arb_peo/U15/Y (AND2X1)                       0.03       0.81 r
+  router_0_3/arb_peo/U16/Y (INVX1)                        0.02       0.83 f
+  router_0_3/arb_peo/U49/Y (OAI21X1)                      0.02       0.85 r
+  router_0_3/arb_peo/U85/Y (INVX1)                        0.03       0.88 f
+  router_0_3/arb_peo/U41/Y (OAI21X1)                      0.49       1.37 r
+  router_0_3/arb_peo/gnt_3 (arbiter4_9)                   0.00       1.37 r
+  router_0_3/U3308/Y (INVX1)                              0.18       1.55 f
+  router_0_3/U3281/Y (AND2X1)                             0.33       1.88 f
+  router_0_3/U3218/Y (INVX1)                              0.12       2.00 r
+  router_0_3/U3189/Y (INVX1)                              0.46       2.46 f
+  router_0_3/U1826/Y (AOI22X1)                            0.22       2.68 r
+  router_0_3/U336/Y (BUFX2)                               0.05       2.72 r
+  router_0_3/U334/Y (AND2X2)                              0.03       2.76 r
+  router_0_3/U335/Y (INVX1)                               0.02       2.77 f
+  router_0_3/buf_peo_v1/data_in[32] (buffer_60)           0.00       2.77 f
+  router_0_3/buf_peo_v1/U103/Y (AOI22X1)                  0.05       2.82 r
+  router_0_3/buf_peo_v1/U15/Y (BUFX2)                     0.04       2.85 r
+  router_0_3/buf_peo_v1/U170/Y (INVX1)                    0.01       2.87 f
+  router_0_3/buf_peo_v1/mem_reg[32]/D (DFFPOSX1)          0.00       2.87 f
+  data arrival time                                                  2.87
+
+  clock clk (rise edge)                                   5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  router_0_3/buf_peo_v1/mem_reg[32]/CLK (DFFPOSX1)        0.00       5.00 r
+  library setup time                                     -0.06       4.94
+  data required time                                                 4.94
+  --------------------------------------------------------------------------
+  data required time                                                 4.94
+  data arrival time                                                 -2.87
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.08
+
+
+  Startpoint: reset (input port)
+  Endpoint: router_0_0/buf_ccwo_v0/U126/B
+            (internal path endpoint)
+  Path Group: default
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 f
+  reset (in)                                              0.00       0.00 f
+  router_0_0/reset (gold_router_15)                       0.00       0.00 f
+  router_0_0/buf_ccwo_v0/reset (buffer_307)               0.00       0.00 f
+  router_0_0/buf_ccwo_v0/U10/Y (INVX1)                    0.01       0.01 r
+  router_0_0/buf_ccwo_v0/U138/Y (NAND3X1)                 0.01       0.02 f
+  router_0_0/buf_ccwo_v0/U6/Y (BUFX2)                     0.04       0.05 f
+  router_0_0/buf_ccwo_v0/U9/Y (INVX1)                     0.57       0.62 r
+  router_0_0/buf_ccwo_v0/U126/B (AOI22X1)                 0.00       0.62 r
+  data arrival time                                                  0.62
+
+  max_delay                                               5.00       5.00
+  output external delay                                   0.00       5.00
+  data required time                                                 5.00
+  --------------------------------------------------------------------------
+  data required time                                                 5.00
+  data arrival time                                                 -0.62
+  --------------------------------------------------------------------------
+  slack (MET)                                                        4.38
+
+
+1
